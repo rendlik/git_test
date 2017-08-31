@@ -1,104 +1,226 @@
 body {
   font-family: 'Oswald', sans-serif;
-  background: url('../images/background.png') no-repeat;
-  background-size: 100%;
+  background: #fff url('../images/2.png') repeat-y center center scroll;
+  background-position: center;
+  background-size: cover;
   text-align: center;
+  font-size: 2vw;
 }
 
-#cover {
-  min-height: 1800px;
-  /*position: relative;*/
-  
-  /*top: -44px;*/
-  /*width: 100%;*/
-  /*background: url('../images/background.png') no-repeat center top;*/
-  /*background-size: contain;
-  background-attachment: local;*/
+
+.masthead{
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 10% 0 80% 0;;
+  text-align: center;
+  background: url(../images/head.png) no-repeat bottom center scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
-/*a {
-  color: #000;
-}*/
-
-/*.navbar-header {
-  float: none;
-  
-}*/
-
-/*.navbar {
-  border-radius: 0px;
+#main-logo{
+  width:24%;
 }
-*/
-/*a.navbar-brand {
-  margin-left: 20px;
-  font-size: 150%;
-  color: #000;
+
+.navbar{
+  background: transparent;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  border:0px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 3px 0;
+  border-radius: 0;
+}
+
+.nav>li>a{
+  border-radius: 8px;
+  font-size: 1.2vw;
+}
+
+.nav>li>a:hover{
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#hacemos{
+  background: url('../images/hacemos.png') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 25%;
+  padding-bottom: 12%;
+  color: #fff;
+}
+
+#programas{
+  background: url('../images/programas.png') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 22%;
+  padding-bottom: 46%;
+  margin-top: -17%;
+  color: #fff;
+
+}
+
+.button-programas{
+  color: #fff;
+  padding: 2% 18%;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.programas-butt-description{
+  text-transform: uppercase;
+  margin-bottom: 4%;
   font-weight: bold;
 }
-*/
-@media (min-width: 768px) {
-  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: 42%;
+
+.button-programas:hover{
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,0.5);
+}
+
+#contacto{
+  background: url('../images/contacto.png') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 4%;
+  padding-bottom: 6%;
+  margin: 4% 0;
+  color: #fff;
+}
+
+table{
+  text-align: left;
+  margin: 0 2%;
+}
+
+td:first-child{
+  padding-right: 5%;
+}
+
+.mx-auto{
+  padding: 0 5%;
+}
+
+@media (min-width: 425px){
+  .mx-auto{
+    padding: 0 22%;
   }
 }
 
-@media (max-width: 767px) {
-  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    margin-left: 30px;
+@media (min-width: 1840px){
+  .mx-auto{
+    padding: 0;
   }
 }
 
-.navbar-default .navbar-nav>li>a {
-  text-align: center;
-  color: #3b609b;
+#idealist_logo{
+  width: 20% ;
+  float: left;
+  margin-left: 3%
 }
 
-
-
-.navbar-nav {
-  float: none;
+#idealist_description{
+  text-align: left;
+  margin-left: 30%;
+  margin-bottom: 4%;
+  padding-top: 6%; 
 }
 
-.container-fluid {
-  padding-top: 10px;
+#voluntariado{
+  color: #2f4e84;
+}
+
+#email_cebes{
+  color: #3372cc;
+}
+
+#sicsal{
+  width: 15%;
+}
+
+#logo-bottom{
+  width: 34%;
+  margin:0 6%;
+}
+
+#family{
+  width: 28%;
+}
+
+#google, #youtube, #facebook{
+  width: 12%;
+  margin-top: 3%;
+}
+
+#facebook{
+  margin-right: 3%;
+  margin-left: 3%;
+
+}
+
+#footer{
+  background: url('../images/contacto.png') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 4%;
+  padding-bottom: 6%;
+  margin-top:5%;
+  color: #fff;
+}
+
+.mx-auto h2 {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 7.2vw;
 }
 
-/*.navbar-default .navbar-brand {
-  color: #000;
-}*/
-
-.navbar-default {
-  border: 0px;
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 100%;
-  position: fixed;
-  /*background-color: #fff;
-  border-color: #fff;*/
-  /*overflow-y: auto;*/
-  /*left: 0;*/
-  /*top: 0;*/
-  /*text-align: center;*/
-  /*z-index: 10000;*/
+#programas h2{
+  text-transform: uppercase;
+  font-size: 7.2vw;
 }
 
-.cover-content {
-  margin-top: 80%;
+#somos{
+  color: #2f4e84;
+}
+
+#somos h2{
+  color: #7e8eb6;
+  margin-bottom: 8%;
+}
+
+#hacemos h2{
+  color: #efefef;
+  margin-bottom: 8%;
+}
+
+#programas h2{
+  color: #efefef;
+  margin-bottom: 8%;
+}
+
+#voluntariado h2{
+  color: #7e8eb6;
+  margin-bottom: 8%;
+}
+
+#contacto h2{
+  margin-bottom: 8%;
+}
+
+#link-hacemos, #link-somos,#link-programas,#link-voluntariado,#link-contacto{
   position: absolute;
-  left: 50%;
-  transform: translate(-50%,-50%);
-
-  
+  margin-top: -50px;
 }
-
-.logo img{
-  
-  margin-top: 10%;
-  width: 21%;
-}
-
-/*.navbar-default .navbar-brand{
-  color: #3b609b;
-  font-size: 140%;
-}*/
