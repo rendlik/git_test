@@ -34,6 +34,7 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 3px 0;
   border-radius: 0;
+  z-index: 10000;
 }
 
 .nav>li>a{
@@ -80,6 +81,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 4%;
   font-weight: bold;
+  color: #fff;
 }
 
 .button-programas:hover{
@@ -224,3 +226,26 @@ td:first-child{
   position: absolute;
   margin-top: -50px;
 }
+
+.carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  .carousel-caption {
+    position: static;
+    margin:0 6%;
+    color: #2f4e84;
+    font-family: 'Oswald', sans-serif;
+  }
+
+#education-footer{
+   background: url('../images/education/educacion-footer.png') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 3% 0;
+}
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="css/styles.css">
+ <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /*.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }*/
+
+    .navbar{
+     /* background: transparent;
+      text-transform: uppercase;*/
+      /*position: absolute;*/
+     /* width: 100%;
+      border:0px;
+      background-color: rgba(255, 255, 255, 0.3);
+      padding: 3px 0;
+      border-radius: 0;*/
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    
+/*    
+  .carousel-inner img {
+      width: 100%; 
+      margin: auto;
+      min-height:200px;
+  }
+
+  .carousel-caption {
+    position: static;
+    margin:0 6%;
+  }
+
+  .carousel-header {
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    text-transform: uppercase;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 8vw;
+  }
+
+  body {
+    background-color: white;
+  }
+*/
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  /*@media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }*/
+  
+  }
+  </style> 
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+
+  
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <!-- <a class="navbar-brand visible-xs" href="#">Fundamher</a> -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"  onclick="hideLogo()">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav nav-justified">
+            <li ><a href="index.html#link-somos" >Quiénes somos</a></li>
+            <li ><a href="index.html#link-hacemos">qué hacemos</a></li>
+            <li ><a href="index.html#link-programas" >programas y proyectos</a></li>
+            <li ><a href="index.html#link-voluntariado" >voluntariado</a></li>
+            <li ><a href="index.html#link-contacto" >contacto</a></li>
+           </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+<div id="myCarousel" class="carousel slide" >
+    <!-- Indicators -->
+ <!--    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol> -->
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="images/education/EDUCACION-01.png" alt="Image">
+        <div class="carousel-caption">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-6 text-justify">
+                El programa de educación se dedica a fortalecer y articular a las Comunidades Eclesciales de Base (CEB) mediante procesos sistemáticos de acompañamiento, sensibilización y formación integral.
+              </div>
+
+              <div class="col-xs-6 text-justify">
+                Estos procesos incluyen el acompañamiento pastoral inspirado en las primeras  comunidades Cristianas y el espíritu renovador del Concilio Vaticano II, así como la conformación y apoyo a las redes juveniles y los colectivos de mujeres empresarias. El arte y la cultura popular se         consideran parte esencial de estos procesos liberadores a nivel personal y comunitario.
+              </div>
+            </div>
+          </div> 
+        </div>  
+      </div>
+
+      <div class="item">
+        <img src="images/education/EDUCACION-02.png" alt="Image">
+        <div class="carousel-caption">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-6 text-justify">
+                Es una instancia de formación que enfatiza la misión promordial de construir el Reino de Dios en la Tierra, con fidelidad al proyecto histórico de   salvación y liberación propios de la espiritualidad cristiana. 
+              </div>
+
+              <div class="col-xs-6 text-justify">
+               Utiliza como guía los principios, métodos y experiencias adquiridos por las CEB en su caminar y reforzados con la sangre de los mártires.
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+
+      <div class="item">
+        <img src="images/education/EDUCACION-03.png" alt="Image">
+        <div class="carousel-caption">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-6 text-justify">
+                Fortalece los procesos de formación juvenil y promueve el liderazgo de los jóvenes en los                  departamentos de Morazán, La Libertad y San Salvador. 
+              </div>
+
+              <div class="col-xs-6 text-justify">
+               Cuenta con un Centro Juvenil en el municipio de Sacacoyo, departamento de La Libertad. Su misión es capacitar, formar, y recrear a la juventud.
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+      <div class="item">
+        <img src="images/education/EDUCACION-04.png" alt="Image">
+        <div class="carousel-caption">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-6 text-justify">
+                Trabaja por el fortalecimiento de los liderazgos   locales de las mujeres, los procesos de formación para el desarrollo integral y la recuperación de la memoria histórica, y la promoción de las capacidades organizativas y de desarrollo económico, en el marco de la Economía Solidaria del Cuidado. 
+              </div>
+
+              <div class="col-xs-6 text-justify">
+               Utiliza como guía los principios, métodos y experiencias adquiridos por las CEB en su caminar y reforzados con la sangre de los mártires.
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+
+
+<section id="education-footer" class="content-section text-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="">
+            <!-- <h2>programas y proyectos</h2> -->
+            <!-- div class="col-xs-4">
+              <div class="programas-butt-description">Educación</div>
+              <a href="index.html" class="button-programas">Ver más</a>
+            </div> -->
+            <div class="col-xs-4">
+              <div class="programas-butt-description">solidaridad</div>
+              <a href="index.html" class="button-programas">Ver más</a>
+            </div>
+            <div class="col-xs-4">
+              <div class="programas-butt-description">desarrollo comunitario</div>
+              <a href="index.html" class="button-programas">Ver más</a>
+              </div>
+            <div class="col-xs-4">
+            <div class="programas-butt-description">autogestión</div>
+              <a href="index.html" class="button-programas">Ver más</a>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
