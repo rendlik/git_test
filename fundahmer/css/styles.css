@@ -1,10 +1,10 @@
 body {
   font-family: 'Oswald', sans-serif;
-  background: #fff url('../images/2.png') repeat-y center center scroll;
+  background: #fff url('../images/FONDO-10.png') repeat-y center center scroll;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.2vw;
 }
 
 
@@ -35,16 +35,19 @@ body {
   padding: 3px 0;
   border-radius: 0;
   z-index: 10000;
+  min-height: 38px;
 }
 
 .nav>li>a{
   border-radius: 8px;
-  font-size: 1.2vw;
+  font-size: 1.6vw;
+  font-weight: 600;
 }
 
 .nav>li>a:hover{
   background: rgba(255, 255, 255, 0.1);
 }
+
 
 #hacemos{
   background: url('../images/hacemos.png') no-repeat center center scroll;
@@ -52,7 +55,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 25%;
+  padding-top: 18%;
   padding-bottom: 12%;
   color: #fff;
 }
@@ -63,23 +66,25 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 22%;
-  padding-bottom: 46%;
+  padding-top: 10%;
+  padding-bottom: 17%;
   margin-top: -17%;
   color: #fff;
-
 }
+
 
 .button-programas{
   color: #fff;
-  padding: 2% 18%;
-  border: 2px solid white;
+  padding: 1.6% 18%;
+  border: 1px solid white;
   border-radius: 10px;
+  margin-top: 2px;
 }
 
 .programas-butt-description{
   text-transform: uppercase;
   margin-bottom: 4%;
+  margin-top: 10%;
   font-weight: bold;
   color: #fff;
 }
@@ -128,7 +133,7 @@ td:first-child{
 }
 
 #idealist_logo{
-  width: 20% ;
+  width: 5em;
   float: left;
   margin-left: 3%
 }
@@ -136,8 +141,8 @@ td:first-child{
 #idealist_description{
   text-align: left;
   margin-left: 30%;
-  margin-bottom: 4%;
-  padding-top: 6%; 
+  margin-bottom: 6%;
+  padding-top: 4%; 
 }
 
 #voluntariado{
@@ -173,15 +178,19 @@ td:first-child{
 }
 
 #footer{
-  background: url('../images/contacto.png') no-repeat center center scroll;
+  background: url('../images/8.png') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 4%;
-  padding-bottom: 6%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   margin-top:5%;
   color: #fff;
+}
+
+#footer p{
+  margin:0;
 }
 
 .mx-auto h2 {
@@ -189,13 +198,10 @@ td:first-child{
   font-size: 7.2vw;
 }
 
-#programas h2{
-  text-transform: uppercase;
-  font-size: 7.2vw;
-}
 
 #somos{
   color: #2f4e84;
+  padding-top: 2%;
 }
 
 #somos h2{
@@ -209,8 +215,12 @@ td:first-child{
 }
 
 #programas h2{
+  font-size: 7.2vw;
+  margin-top: 10%;
   color: #efefef;
-  margin-bottom: 8%;
+  text-transform: uppercase;
+  margin-bottom: 16%;
+  text-shadow: 1px 1px 18px #000;
 }
 
 #voluntariado h2{
@@ -249,3 +259,18 @@ td:first-child{
   padding: 3% 0;
 }
 
+.vertical-center div{
+  display: table;
+  height: 17ex;
+}
+.vertical-center p{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 424px){
+  .phone-view{
+    padding: 0 14%;
+    font-size: 2.2vw;
+  }
+}
