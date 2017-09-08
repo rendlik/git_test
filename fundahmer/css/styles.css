@@ -1,6 +1,6 @@
 body {
   font-family: 'Oswald', sans-serif;
-  background: #fff url('../images/FONDO-10.png') repeat-y center center scroll;
+  background: #fff url('../images/fondo.jpg') repeat-y center center scroll;
   background-position: center;
   background-size: 100%;
   text-align: center;
@@ -50,7 +50,7 @@ body {
 
 
 #hacemos{
-  background: url('../images/hacemos.png') no-repeat center center scroll;
+  background: url('../images/hacemos (2).png') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -81,6 +81,16 @@ body {
   margin-top: 2px;
 }
 
+.button-programas-sm{
+  color: #fff;
+  padding: 1% 18%;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 1px;
+  font-size: 1.8vw;
+}
+
+
 .programas-butt-description{
   text-transform: uppercase;
   margin-bottom: 4%;
@@ -89,14 +99,29 @@ body {
   color: #fff;
 }
 
+.programas-butt-description-sm{
+  text-transform: uppercase;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.8vw;
+}
+
 .button-programas:hover{
   color: #fff;
   text-decoration: none;
   background: rgba(255,255,255,0.5);
 }
 
+.button-programas-sm:hover{
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,0.5);
+}
+
 #contacto{
-  background: url('../images/contacto.png') no-repeat center center scroll;
+  background: url('../images/contacto.jpg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -178,7 +203,7 @@ td:first-child{
 }
 
 #footer{
-  background: url('../images/8.png') no-repeat center center scroll;
+  background: url('../images/footer.jpg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -220,7 +245,7 @@ td:first-child{
   color: #efefef;
   text-transform: uppercase;
   margin-bottom: 16%;
-  text-shadow: 1px 1px 18px #000;
+  text-shadow: 1px 1px 30px #000;
 }
 
 #voluntariado h2{
@@ -232,9 +257,14 @@ td:first-child{
   margin-bottom: 8%;
 }
 
-#link-hacemos, #link-somos,#link-programas,#link-voluntariado,#link-contacto{
+#link-hacemos, #link-somos,#link-voluntariado,#link-contacto{
   position: absolute;
-  margin-top: -50px;
+  margin-top: -6%;
+}
+
+#link-programas{
+  position: absolute;
+  margin-top: 3%;
 }
 
 .carousel-inner img {
@@ -251,21 +281,46 @@ td:first-child{
   }
 
 #education-footer{
-   background: url('../images/education/educacion-footer.png') no-repeat center center scroll;
+   background: url('../images/education/educacion-footer.jpg') no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 3% 0;
+  padding-bottom: 2%;
+}
+
+#solidaridad-footer{
+   background: url('../images/solidaridad/solidaridad-footer.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 2%;
+}
+
+#desarrollo-footer{
+   background: url('../images/desarrollo/desarrollo-footer.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 2%;
 }
 
 .vertical-center div{
   display: table;
-  height: 17ex;
+  height: 18ex;
+
 }
 .vertical-center p{
+  /*padding-top: 5%;*/
+  /*position: absolute;*/
   display: table-cell;
   vertical-align: middle;
+}
+
+.hide-me{
+  visibility: hidden;
 }
 
 @media (max-width: 424px){
