@@ -307,6 +307,16 @@ td:first-child{
   padding-bottom: 2%;
 }
 
+#autogestion-footer{
+   background: url('../images/autogestion/autogestion-footer.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 2%;
+}
+
+
 .vertical-center div{
   display: table;
   height: 18ex;
