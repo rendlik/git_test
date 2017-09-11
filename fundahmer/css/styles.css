@@ -333,6 +333,16 @@ td:first-child{
   visibility: hidden;
 }
 
+.phone-nbr{
+  text-decoration: none;
+  color:inherit;
+}
+
+.phone-nbr:hover, .phone-nbr:focus{
+  color:#e2e2e2;
+  text-decoration: none;
+}
+
 @media (max-width: 424px){
   .phone-view{
     padding: 0 14%;
