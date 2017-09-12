@@ -138,7 +138,7 @@ table{
 }
 
 td:first-child{
-  padding-right: 5%;
+  padding-right: 1.5em;
 }
 
 .mx-auto{
@@ -266,6 +266,20 @@ td:first-child{
   position: absolute;
   margin-top: 3%;
 }
+
+@media (max-width: 768px){
+  #link-hacemos, #link-somos,#link-voluntariado,#link-contacto{
+    position: absolute;
+    margin-top: -16%;
+  }
+
+  #link-programas{
+    position: absolute;
+    margin-top: -10%;
+  }
+}
+
+
 
 .carousel-inner img {
       width: 100%; /* Set width to 100% */
