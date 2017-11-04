@@ -67,11 +67,12 @@
     setTimeout(function(){ document.querySelector(`div[data-key="${e.keyCode}"]`).classList.remove('playing');
  }, 140);
   });
-  
+
+  // window.addEventListener("mousedown",console.log('asasdjlka'));
   var keyArray = document.getElementsByClassName("key");
   for(var i=0; i< keyArray.length; i++) {
-      console.log(keyArray[i]);
-        keyArray[i].addEventListener("click",function(e){
+      // console.log(keyArray[i]);
+        keyArray[i].addEventListener("mousedown",function(e){
         console.log(e.path[1].attributes[0].nodeValue);
         const audio = document.querySelector(`audio[data-key="${e.path[1].attributes[0].nodeValue}"]`);
         if(!audio) return;
