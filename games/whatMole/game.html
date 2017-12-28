@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whack A Mole!</title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Whack-a-mole!</h1>
+
+  <div class="dashboard">
+    <div class="score">0</div>
+    <div class="time"> 0 </div>
+  </div>
+
+  <div class="game">
+    <div class="hole hole1">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="mole"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="mole"></div>
+    </div>
+  </div>
+
+  <div class="game-controls">
+    <a href="index.html" class="button"> menu </a>
+    <button class="button" id="play-again" onclick="location.reload()"> play again </button>
+  </div>
+
+  <div class="countdown"> 
+    <span>3</span>
+  </div>
+
+  <audio id="tink" src="tink.wav"></audio>
+  <audio id="tick" src="tick.mp3"></audio>
+<script src="script.js"></script>
+<script> 
+  timerDisplay.innerHTML = `<span>${secondsTimer}</span>`
+  window.addEventListener('load',timer(seconds, countdownDisplay))
+  tick.play()
+  window.setTimeout(() => {window.addEventListener('load',timer(secondsTimer, timerDisplay))
+}, (seconds+1)*1000);
+
+  // window.addEventListener('load',setTimeout(() => timer(secondsTimer, timerDisplay),seconds+2))
+</script>
+<!-- <script> window.addEventListener('load',startGame)</script> -->
+</body>
+</html>

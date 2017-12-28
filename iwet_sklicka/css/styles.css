@@ -1,9 +1,9 @@
 body {
   font-family: 'Shadows Into Light', cursive;
-  font-family: 'Kaushan Script', cursive;
-  /*font-family: 'Boogaloo', cursive;
-  font-family: 'Kalam', cursive;
-  font-family: 'Shadows Into Light Two', cursive;*/
+  /*font-family: 'Kaushan Script', cursive;*/
+  /*font-family: 'Boogaloo', cursive;*/
+  /*font-family: 'Kalam', cursive;*/
+  font-family: 'Shadows Into Light Two', cursive;
   background: #fff url('../images/fondo.jpg') repeat-y center center scroll;
   background-position: center;
   background-size: 100%;
@@ -11,4 +11,30 @@ body {
   font-size: 2.2vw;
 }
 
+.bg-3 p{
+  /*background: url("/images/butterfly.jpg");*/
+  /*width:100%;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
 
+#angels{
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+#angels:hover{
+  width: 110%;
+ /* color: #000;*/
+}
+
+/*.bg-3 div.col-sm-2{
+  width: 10%;
+  height: auto;
+  background: url("/images/butterfly.jpg");
+  margin: 2%;
+}
+*/
