@@ -97,7 +97,7 @@ header button#menu-button.active .btn-line:nth-child(3) {
 
 header div#menu{
 	position: absolute;
-    top: -30%;
+    top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
 	width: 99%;
@@ -108,11 +108,8 @@ header div#menu{
 	justify-content: center;
 	align-items: center;
 	border-radius: 2px;
-	/*padding:1vh 1vw;
-	margin: 1px 1px;*/
-	
 	line-height: 1.7;
-	font-size: 1.4rem;
+	font-size: 6vw;
 	-webkit-transition: 1s ease-out;
 	-moz-transition: 1s ease-out;
 	-o-transition: 1s ease-out;
@@ -159,7 +156,6 @@ header div#menu.open{
     color: rgb(2, 52, 132);
     font-size: 6vw;
     font-weight: bold;
-    /*text-shadow: 1px 1px 3px #000000;*/
     cursor: pointer;
 }
 
@@ -169,7 +165,7 @@ header div#menu.open{
 
 .header-item .country-detail{
 	position: absolute;
-    top: -30%;
+    top: -50%;
     left: 50%;
     transform: translate(-50%, -50%);
 	width: 99%;
@@ -180,8 +176,6 @@ header div#menu.open{
 	justify-content: center;
 	align-items: center;
 	border-radius: 2px;
-	/*padding:1vh 1vw;
-	margin: 1px 1px;*/
 	color:#fff;
 	line-height: 1.7;
 	font-size: 1.4rem;
@@ -191,12 +185,12 @@ header div#menu.open{
 	transition: 1s ease-out;
 }
 
-.header-item.open .country-detail{
+.header-item .country-detail.open{
 	opacity: 1;
 	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 4vh 4vw;
+    padding: 30px 70px;
     z-index: 10;
 }
 
