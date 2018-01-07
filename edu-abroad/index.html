@@ -18,20 +18,59 @@
 	<header>
 			<!-- <a id="menu-icon" href="#"> </a> -->
 		<div class="header-container">	
-			<div class="header-item" id="usa"> USA <div class="country-detail"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis dolor blandit, sagittis eros vel, pretium diam. Pellentesque porta mauris ipsum. Sed sed lectus quam. Nullam sodales nunc eget quam luctus accumsan. Etiam orci risus, porta eget tempus id, sagittis nec odio. Morbi placerat tincidunt fringilla. Nulla facilisi. Praesent posuere nisl ultrices euismod aliquet. In id euismod neque, et ullamcorper elit. Nulla facilisi. Vestibulum risus sapien, gravida vitae cursus vel, auctor vel ante. Vestibulum sed rutrum orci. Proin diam lorem, vestibulum nec ipsum ut, vestibulum condimentum lorem. Proin posuere ultricies dui, a lacinia diam egestas at. Aliquam erat volutpat. 	
+
+			<div class="header-item"> USA </div>
+			<div class="country-detail"> USA desc 	
 				<button id="close-button">
 					<span class="btn-line"></span>
 					<span class="btn-line"></span>	
 				</button>
-			</div></div>
-			<div class="header-item"> England <div class="country-detail">	</div>	</div>
-			<div class="header-item"> Canada <div class="country-detail">	</div>	</div>
+			</div>
+
+			<div class="header-item"> England </div>
+			<div class="country-detail"> England desc 	
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>	
+				</button>
+			</div>
+
+			<div class="header-item"> Canada </div>
+			<div class="country-detail"> Canada desc 	
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>	
+				</button>
+			</div>
 		</div>
 
 		<div class="header-container">	
-			<div class="header-item"> Australia	<div class="country-detail">	</div> </div>
-			<div class="header-item"> Germany <div class="country-detail">	</div></div>
-			<div class="header-item"> Others <div class="country-detail">	</div> </div>
+			<div class="header-item"> Australia </div>
+			<div class="country-detail"> Australia desc 	
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>	
+				</button>
+			</div>
+
+			<div class="header-item"> Germany</div>
+			<div class="country-detail"> Germany desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis dolor blandit, sagittis eros vel, pretium diam. Pellentesque porta mauris ipsum. Sed sed lectus quam. Nullam sodales nunc eget quam luctus accumsan. Etiam orci risus, porta eget tempus id, sagittis nec odio. Morbi placerat tincidunt fringilla. Nulla facilisi. Praesent posuere nisl ultrices euismod aliquet. In id euismod neque, et ullamcorper elit. Nulla facilisi. Vestibulum risus sapien, gravida vitae cursus vel, auctor vel ante. Vestibulum sed rutrum orci. Proin diam lorem, vestibulum nec ipsum ut, vestibulum condimentum lorem. Proin posuere ultricies dui, a lacinia diam egestas at. Aliquam erat volutpat.
+
+		Aenean nec finibus neque, at tempus lacus. Donec interdum vel quam vitae mattis. Mauris nec libero sit amet nibh porta congue in at urna. 	
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>	
+				</button>
+			</div>
+
+			<div class="header-item"> Others </div>
+			<div class="country-detail"> Others desc 	
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>	
+				</button>
+			</div>
+
 		</div>
 
 		<button id="menu-button">
@@ -48,7 +87,7 @@
 				<a href="#"><li>contact</li></a>
 			</ul>
 		</div>
-
+		
 	</header>
 
 	<section id="jumbotron">
@@ -68,33 +107,7 @@
 
 
 	<!-- javascript -->
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-	<script>
-		const menuButton = document.getElementById('menu-button')
-		const menu = document.getElementById('menu');
-		const countries = document.querySelectorAll('.header-item')
-		const closeButtons = document.querySelectorAll('#close-button')
-		// console.log($('.header-item'))
 
-		menuButton.addEventListener('click',function(){
-			menuButton.classList.toggle('active')
-		})
-
-		menuButton.addEventListener('click',function(){
-			menu.classList.toggle('open')
-		})
-
-		countries.forEach(country => country.addEventListener('click',function(){
-			this.childNodes[1].classList.add('open')
-		}))
-
-		closeButtons.forEach(button => button.addEventListener('click',function(){
-			this.parentNode.classList.remove('open')
-		}))
-
-	</script>
+	<script src="script.js"></script>
 </body>
 </html>
