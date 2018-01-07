@@ -8,7 +8,7 @@ body{
 
 header{
 	position: relative;
-	background: url('img/header.jpeg') no-repeat bottom center scroll;
+	background: url('img/header-min.jpeg') no-repeat bottom center scroll;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -173,11 +173,12 @@ header div#menu.open{
 	border-radius: 2px;
 	color:#fff;
 	line-height: 1.7;
-	font-size: 1.4rem;
+	font-size: 2.6vw;
 	-webkit-transition: 1s ease-out;
 	-moz-transition: 1s ease-out;
 	-o-transition: 1s ease-out;
 	transition: 1s ease-out;
+	z-index: -1;
 }
 
 	
