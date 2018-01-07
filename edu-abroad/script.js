@@ -29,3 +29,11 @@ document.addEventListener('keydown',function(e){
 		});
 	}
 })
+
+document.addEventListener('keydown',function(e){
+	if(!e.isTrusted) return
+	if(e.code === 'Escape'){
+		menu.classList.remove('open')
+		menuButton.classList.remove('active')
+	}
+})
