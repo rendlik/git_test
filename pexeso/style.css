@@ -1,0 +1,145 @@
+body{
+	margin:0;
+	padding:0;
+	background: #5BA9C1;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	/*font-family: 'Gloria Hallelujah', cursive;*/
+}
+
+.freeze{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.freeze.active{
+	z-index: 10;
+}
+
+.game{
+	box-sizing: border-box;
+	min-width: 820px;
+}
+
+.row{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 2vw;
+}
+
+.card{
+	width:200px;
+	background: transparent;
+	height: 200px;
+}	
+
+.flipper,.f,.b {
+    height: 100%;
+    width: 100%
+}
+
+.card {
+    -moz-perspective: 1000;
+    -webkit-perspective: 1000;
+    display: inline-block;
+}
+
+.flipper {
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+}
+
+.f,.b {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-shadow: inset 0 0 0 3px #FFF;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.f {
+    background: #1E3338;
+    z-index: 1
+}
+
+.b {
+    opacity: 0;
+    background-position: center;
+	background-size: cover;
+}
+
+.card.active .b {
+    opacity: 1;
+    z-index: 2
+}
+
+.card,
+.flipper{
+    -moz-transition: 400ms;
+    -ms-transition: 400ms;
+    -o-transition: 400ms;
+    -webkit-transition: 400ms;
+    transition: 400ms
+}
+
+.card.active .flipper,
+.b {
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.card1 .b{
+	background-image: url('img/Paris.jpeg'); 
+}
+
+.card2 .b{
+	background-image: url('img/NY.jpeg'); 
+}
+
+.card4 .b{
+	background-image: url('img/Wash.jpeg'); 
+}
+
+.card3 .b{
+	background-image: url('img/Tokyo.jpeg'); 
+}
+
+.card.hide{
+	opacity: 0;
+}
+
+.win{
+	position:absolute;
+	z-index: -1;
+	top:0;
+	left: 0;
+	opacity: 0;
+	width:100%;
+	height: 100%;
+	transition: .4s;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+}
+
+.win h2{
+	position: absolute;
+	bottom: 25px;
+	right: 70px;
+	cursor: pointer;
+}
+
+.win.active{
+	z-index: 3;
+	background: rgba(255,255,255,0.65);
+	opacity: 1;
+}
