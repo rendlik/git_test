@@ -1,0 +1,180 @@
+body{
+  background: #2c3f5d;
+  padding-top: 8vh;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.card{
+  background: #a3a5a5;
+  width:400px;
+  margin:0 auto;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.card h1{
+  text-align: center;
+  margin: 5px;
+}
+
+.card h2{
+  text-align: center;
+  margin: 5px;
+}
+
+.controls{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.controls input{
+  grid-column: 1/5;
+}
+
+.controls .calendar{
+  grid-column: 1/5;
+  text-align: right;
+  margin: 0 auto;
+}
+
+.calendar{
+  background: #d0d1d1;
+  border:0.5px solid  #444545;
+  border-radius: 2px;
+  padding: 4px;
+  font-size: 0.8em;
+}
+
+.control-btn{
+  padding: 6px;
+  background: #d0d1d1;
+  border:0.5px solid  #444545;
+  border-radius: 2px;
+  transition: all 400ms ease-out;
+  outline: none;
+  cursor: pointer;
+}
+
+.controls button:hover{
+  color: #d0d1d1;
+  background: #444545;
+}
+
+.controls button.active{
+  color: #d0d1d1;
+  background: #444545;
+
+}
+
+input{
+    border-radius: 2px;
+    outline: none;
+    padding: 8px;
+    text-indent: 9px;
+    background: #d0d1d1;
+    border:0.5px solid  #444545;
+    display: block;
+}
+
+.card-body{
+  margin-top: 18px;
+  margin-bottom: 15px;
+  display: none;
+}
+
+.warning{
+  display: none;
+  font-size: 0.6em;
+  color: #c20000;
+  overflow: hidden;
+  text-align: center;
+}
+
+.month{
+  height: 33px;;
+}
+
+.btn-left, .btn-right{
+  border: 0.5px solid  #444545;
+  border-radius: 2px;
+  padding: 1.5px 6px;
+  outline: none;
+  transition: all 300ms ease-out;
+  z-index: 100;
+  cursor: pointer;
+  position: absolute;
+}
+
+.btn-left{
+  left:2px;
+}
+
+.btn-right{
+  right:2px;
+}
+
+.calendar{
+  padding: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 3px;
+  display: none;
+  /* position: absolute; */
+}
+
+.calendar .month{
+  grid-column: 1/6;
+  text-align: center;
+  border-bottom: 0.5px solid  #444545;
+  padding: 4px;
+  position: relative;
+}
+
+.calendar .row{
+  grid-column: 1/6;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.row>div{
+  transition: all 300ms ease-out;
+  padding: 5px;
+  margin:2px;
+  cursor: pointer;
+}
+
+.row>div:hover,.row>div:focus{
+  background: #444545;
+  color:#d0d1d1;
+  border-radius: 2px;
+}
+
+.row>div.active{
+  background: #444545;
+  color:#d0d1d1;
+  border-radius: 2px;
+}
+
+.mth{
+  position: absolute;
+  opacity: 0;
+  right:150px;
+  left: 0px;
+  z-index: 0;
+  transition: all 400ms ease-out;
+}
+
+.mth.active-month{
+  opacity: 1;
+  left: 30px; 
+  right: 30px;
+}
+
+.mth.right{
+  left:150px;
+  right:0px;
+  opacity: 0;
+}

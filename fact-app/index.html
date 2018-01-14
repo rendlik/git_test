@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!--Responsive Viewport Meta tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>Facts</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="reset.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="card">
+			<h1>Facts</h1>
+			<div class="controls">
+				<button class="control-btn" id="number"> number </button>
+				<button class="control-btn" id="year"> year </button>
+				<button class="control-btn" id="math"> math </button>
+				<button class="control-btn" id="date"> date </button>
+				<input type="number" placeholder="Enter a number..." id="numberInput"></input>
+				<div class="calendar">
+					<div class="month">
+						<button class="btn-left btn">&#10094</button>
+						<span class="mth active-month">january</span>
+						<span class="mth">february</span>
+						<span class="mth">march</span>
+						<span class="mth">april</span>
+						<span class="mth">may</span>
+						<span class="mth">june</span>
+						<span class="mth">july</span>
+						<span class="mth">august</span>
+						<span class="mth">september</span>
+						<span class="mth">october</span>
+						<span class="mth">november</span>
+						<span class="mth">december</span>
+						<button class="btn-right btn">&#10095</button>
+					</div>
+
+					<div class="row">
+						<div>1</div>
+						<div>2</div>
+						<div>3</div>
+						<div>4</div>
+						<div>5</div>
+						<div>6</div>
+						<div>7</div>
+					</div>
+					<div class="row">
+						<div>8</div>
+						<div>9</div>
+						<div>10</div>
+						<div>11</div>
+						<div>12</div>
+						<div>13</div>
+						<div>14</div>
+					</div>
+					<div class="row">
+						<div>15</div>
+						<div>16</div>
+						<div>17</div>
+						<div>18</div>
+						<div>19</div>
+						<div>20</div>
+						<div>21</div>
+					</div>
+					<div class="row">
+						<div>22</div>
+						<div>23</div>
+						<div>24</div>
+						<div>25</div>
+						<div>26</div>
+						<div>27</div>
+						<div>28</div>
+					</div>
+					<div class="row feb">
+						<div>29</div>
+						<div>30</div>
+						<div class="hide">31</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="warning"></div>
+				<h2></h2>
+				<p id="numberFact"></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- javascript -->
+	<script src="main.js"></script>
+</body>
+
+</html>
