@@ -145,6 +145,10 @@ td:first-child{
   padding: 0 5%;
 }
 
+.navbar-collapse.in{
+  overflow-y: hidden;
+}
+
 @media (min-width: 425px){
   .mx-auto{
     padding: 0 22%;
