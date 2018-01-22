@@ -129,8 +129,8 @@ function fetchFact(){
         case 'date':
             extension =  date + '/date'
     }
-    console.log('http://numbersapi.com/'+number+'/'+extension)
-    fetch('http://numbersapi.com/'+number+'/'+extension)
+    // console.log('https://numbersapi.com/'+number+'/'+extension)
+    fetch('https://numbersapi.com/'+number+'/'+extension)
     .then(res => res.text())
     .then(data => {
         if(number !== ''){

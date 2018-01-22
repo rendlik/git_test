@@ -19,13 +19,13 @@
 
 
 
-  function selectDiff(e){
+  function selectDiff(){
     diffButtons.forEach(button => {button.classList.remove('active')})
     this.classList.add('active')
     const level = parseInt(this.id)
     console.log(level)
     switch(level){
-      case 3: 
+      case 3:
           minTime = 100
           maxTime = 700
           break;
@@ -41,9 +41,9 @@
     localStorage.setItem("minTime", minTime);
     localStorage.setItem("maxTime", maxTime);
   }
- 
+
   diffButtons.forEach(button => button.addEventListener('click',selectDiff))
-  
+
   function randomTime(min,max){
     return Math.round(Math.random()*(max-min)+min)
   }
@@ -53,7 +53,7 @@
     const hole = holes[idx]
     if(hole === lastHole){
       return randomHole(holes)
-    } 
+    }
     lastHole = hole
     return hole
   }
@@ -89,7 +89,7 @@
   function timer(seconds, element){
     clearInterval(countdown)
     // displayTime(seconds)
-    countdown = setInterval(()=>{ 
+    countdown = setInterval(()=>{
       const secsLeft = seconds--
       if(element === countdownDisplay) tick.play()
       if(secsLeft <= 0){
@@ -108,6 +108,3 @@
   function displayTime(sec,element){
     element.innerHTML = `<span>${sec}</span>`
   }
-
-
-
