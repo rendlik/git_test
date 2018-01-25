@@ -136,11 +136,21 @@ body {
   transition: 1s ease-out;
   z-index: -1;
   display: grid;
+  /* align-items: center; */
+  /* justify-content: center;  */
   grid-gap: 2vw 2vh;
   padding: 2vh;
-  grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(2, 1fr);
   background: #001e3b;
   border-radius: 5px;
+}
+
+.project{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  width:100%;
+  height: 100%;
 }
 
 
@@ -150,12 +160,6 @@ body {
   z-index: 10;
 }
 
-.project{
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
-}
 
 .fundahmer{
   background: url('fundahmer.PNG') no-repeat bottom center;
@@ -163,20 +167,49 @@ body {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	width:100%;
-  height: 100%;
-  opacity: 0.6;
+
 }
 
 .mole{
- 
     background: url('mole.PNG') no-repeat bottom center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    width:100%;
-    height: 100%;
-    opacity: 0.6;
 
+}
+
+.pexeso{
+  background: url('pexeso.PNG') no-repeat bottom center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+}
+
+.todo{
+  background: url('todo.PNG') no-repeat bottom center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+a{
+  text-decoration: none;
+}
+
+.project p{
+  color: rgb(218, 218, 218);
+}
+
+.title{
+  font-size: 2.4rem;
+}
+
+.tools{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color:#094b85;
 }
