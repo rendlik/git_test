@@ -46,8 +46,8 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  background: #225470;
-  opacity: 0.7;
+  background: #55788d;
+  opacity: 0.8;
 }
 
 .content {
@@ -193,6 +193,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #ededed;
 }
 
 .project p {
@@ -207,7 +208,7 @@ a {
 .tools {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #0869bd;
+  color: #55788d;
 }
 
 .contact-form {
@@ -253,7 +254,7 @@ ul{
 }
 
 .company-info{
-  background: #c9e6ff;
+  background:#001e3b;
 }
 
 .company-info h3, .company-info ul{
@@ -261,42 +262,42 @@ ul{
    margin: 0 0 1rem 0;
 }
 
-.contact{
-  background: #f9feff;
+.contact-detail{
+  background: #55788d;
 }
 
-.contact form{
+.contact-detail form{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
 
-.contact form label{
+.contact-detail form label{
   display: block;
 }
 
-.contact form p{
+.contact.form form p{
   margin:0;
 }
 
-.contact form .full{
+.contact-detail form .full{
   grid-column: 1/3;
 }
 
-.contact form button, .contact form textarea, .contact form input{
+.contact-detail form button, .contact-detail form textarea, .contact-detail form input{
   width: 100%;
   padding: .5em;
   border: 1px solid #c9e6ff;
 }
 
-.contact form button{
-  background: #c9e6ff;
+.contact-detail form button{
+  background: rgba(85,120,94,116,0.7);
   border:0;
   text-transform: uppercase;
 }
 
-.contact form button:hover, .contact form button:focus{
-  background: #92bde7;
+.contact-detail form button:hover, .contact-detail form button:focus{
+  background: #001e3b;
   color: #fff;
   outline: 0;
   transition: background-color 2s ease-out;
@@ -305,7 +306,7 @@ ul{
 @media(min-width:700px){
   .wrapper{
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1.4fr;
   }
 
   .wrapper>*{
