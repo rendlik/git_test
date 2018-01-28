@@ -72,6 +72,11 @@ body {
   color: #002b54;
   font-weight: bold;
   cursor: pointer;
+  transition: 700ms;
+}
+
+.link:hover{
+  color: #004c93
 }
 
 .btn-line {
