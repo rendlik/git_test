@@ -141,7 +141,7 @@ body {
   z-index: -1;
   display: grid;
   grid-gap: 2vw 2vh;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   background: #002b54;
   border-radius: 5px;
   padding: 2vh;
@@ -210,6 +210,14 @@ body {
 
 .todo {
   background: url('todo.PNG') no-repeat bottom center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.fact {
+  background: url('fact.PNG') no-repeat bottom center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -290,7 +298,7 @@ a {
 .contact-detail form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1vh 20px;
+  grid-gap: 1vh 30px;
 }
 
 .contact-detail form label {
@@ -327,4 +335,16 @@ a {
 
 .landing-socials a:hover {
   color: #002b54;
+}
+
+.confirmation{
+  background: rgb(72, 157, 72);
+  padding: 6px;
+  display: none;
+}
+
+.error{
+  background: rgb(132, 2, 2);
+  padding: 6px;
+  display: none;
 }
