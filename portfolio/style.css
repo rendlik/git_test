@@ -50,6 +50,12 @@ body {
   opacity: 0.8;
 }
 
+.landing-socials{
+  z-index: 2;
+}
+
+
+
 .content {
   z-index: 2;
 }
@@ -244,7 +250,7 @@ a {
 .socials a {
   display: inline-block;
   margin: 12px;
-  transition: 300ms ease-in-out;
+  transition: 500ms cubic-bezier(0,-0.23, 1, 0.75);
 }
 
 .socials a:hover{
@@ -291,4 +297,8 @@ a {
 .contact-detail form button:hover{
   color: #ededed;
   background: #002b54
+}
+
+.landing-socials a:hover{
+  color:#002b54;
 }
