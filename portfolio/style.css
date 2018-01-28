@@ -223,8 +223,10 @@ a {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
   z-index: -1;
-  display: grid;
-  background: #002b54
+  background: #002b54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form.open{
@@ -235,7 +237,7 @@ a {
 
 .socials{
   position: absolute;
-  bottom: 20px;
+  bottom: 1.5vh;
   right:30px;
 }
 
@@ -247,4 +249,46 @@ a {
 
 .socials a:hover{
   color: #55788d
+}
+
+.contact-detail{
+  width: 70%;
+}
+
+.contact-detail form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh 20px;
+ 
+}
+
+.contact-detail form label{
+  display: block;
+  text-align: left;
+  margin-bottom: 1.5vh;
+}
+
+.full{
+  grid-column:1/3;
+}
+
+
+.contact-detail form button, .contact-detail form textarea, .contact-detail form input{
+  width:100%;
+  padding: 0.5em;
+  border: 1px solid #55788d;
+}
+
+.contact-detail form button{
+  background: #55788d;
+  text-transform: uppercase;
+  color: #ededed;
+  font-weight: 700;
+  transition: 1200ms ease-out;
+  cursor: pointer;
+}
+
+.contact-detail form button:hover{
+  color: #ededed;
+  background: #002b54
 }
