@@ -13,22 +13,22 @@
 <body>
     <div class="container">
         <div class="video-fullscreen">
-            <video src="binary.mp4" loop="true" autoplay="true"></video>
+            <video src="type.mov" loop="true" autoplay="true"></video>
         </div>
         <div class="overlay"></div>
         <div class="content">
             <h1>Roman Stix</h1>
             <p>I am a front-end developer with a background in Math and CS. I focus on front-end while diving into back-end technologies. Check out some of my
-                <span class="link projects">projects</span>, and if you wish you can always
-                <span class="link contact">contact me</span>. </p>
+               <span class="projects"> <a href="#projects-list" class="link"> projects</a> </span>, and if you wish you can always
+                <span class="contact"><a href="#contact-form" class="link"> contact me</a></span>. </p>
         </div>
-        <div class="projects-list">
+        <div class="projects-list" id="projects-list">
             <button class="close-button">
                 <span class="btn-line"></span>
                 <span class="btn-line"></span>
             </button>
 
-            <a href="https://rendlik.github.io/git_test/fundahmer/" target="_blank">
+            <a href="https://rstix.github.io/git_test/fundahmer/" target="_blank">
                 <div class="project fundahmer">
                     <div class="project-overlay"></div>
                     <p>
@@ -39,7 +39,7 @@
                 </div>
 
             </a>
-            <a href="https://rendlik.github.io/git_test/games/whatMole/" target="_blank">
+            <a href="https://rstix.github.io/git_test/games/whatMole/" target="_blank">
                 <div class="project mole">
                     <div class="project-overlay"></div>
                     <p>
@@ -50,7 +50,7 @@
                 </div>
             </a>
 
-            <a href="https://rendlik.github.io/git_test/pexeso/" target="_blank">
+            <a href="https://rstix.github.io/git_test/pexeso/" target="_blank">
                 <div class="project pexeso">
                     <div class="project-overlay"></div>
                     <p>
@@ -60,7 +60,7 @@
                     </p>
                 </div>
             </a>
-            <a href="https://rendlik.github.io/git_test/todo-list/" target="_blank">
+            <a href="https://rstix.github.io/git_test/todo-list/" target="_blank">
                 <div class="project todo">
                     <div class="project-overlay"></div>
                     <p>
@@ -73,7 +73,7 @@
 
             </a>
 
-            <a href="http://run.plnkr.co/oElfe7qk9q9U7vjv/" target="_blank">
+            <a href="http://run.plnkr.co/preview/cjczohd2z0005fill96opvto8/" target="_blank">
                 <div class="project fact">
                     <div class="project-overlay"></div>
                     <p>
@@ -92,7 +92,7 @@
 
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form" id="contact-form">
 
             <button class="close-button">
                 <span class="btn-line"></span>
@@ -109,7 +109,7 @@
                         <input type="text" name="name" required>
                     </p>
                     <p>
-                        <label>Email Address</label>
+                        <label>Email</label>
                         <input type="email" name="email" required>
                     </p>
                     <p class="full">

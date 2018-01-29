@@ -56,6 +56,7 @@ body {
 
 .content {
   z-index: 2;
+  
 }
 
 .content h1 {
@@ -352,4 +353,87 @@ a {
   background: rgb(132, 2, 2);
   padding: 6px;
   display: none;
+}
+
+.content a{
+  pointer-events: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 680px) {
+  .contact-form{
+    top: 280vh;
+    width: 100%;
+    height: 100%;
+    left:0;
+    transform: none;
+    background: #55788d;
+  }
+
+  .content a{
+    pointer-events: auto;
+  }
+
+  .projects-list{
+    top: 100vh;
+    width:100%;
+    height: 180vh;
+    grid-template-columns: 1fr 1fr;
+    left:0;
+    border-radius:0;
+    transform: none;
+    padding: 7vh 2vw;
+  }
+
+  .close-button{
+    display: none;
+  }
+
+  .landing-socials{
+    display: none;
+  }
+
+  .socials a:hover{
+    color: #002b54
+  }
+
+  .contact-detail form button{
+    border: 1px solid #002b54;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .contact-form{
+    top: 280vh;
+    width: 100%;
+    height: 100%;
+    left:0;
+    transform: none;
+    /* background: #55788d; */
+  }
+  .projects-list{
+    top: 100vh;
+    width:100%;
+    height: 180vh;
+    grid-template-columns: 1fr;
+    left:0;
+    border-radius:0;
+    transform: none;
+    padding: 7vh 2vw;
+  }
+
+  .close-button{
+    display: none;
+  }
+
+  .landing-socials{
+    display: none;
+  }
+
+  .content p {
+    font-size: 1.4rem;
+  }
+  .content h1{
+    font-size: 2.4rem;
+  }
 }
