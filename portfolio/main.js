@@ -7,18 +7,17 @@ const projectOverlay = document.querySelector('.project-overlay')
 const projectText = document.querySelectorAll('.project p')
 const contactFormSubmit = document.querySelector('.contact-form form')
 const name = document.querySelector('[name="name"]')
-console.log(projects)
+
 
 
 projects.addEventListener('click',function(){
-    if(screen.width < 681) return
-    console.log(screen.width)
+    if($(document).width() < 681) return
     projectsList.classList.add('open')
     projectOverlay.classList.add('open')
 })
 
 contact.addEventListener('click',function(){
-    if(screen.width < 681) return
+    if($(document).width() < 681) return
     contactForm.classList.add('open')
 })
 
@@ -65,35 +64,28 @@ function sendEmail(e){
 }
 
 $('a[href*="#"]')
-// Remove links that don't actually link to anything
 .not('[href="#"]')
 .not('[href="#0"]')
 .click(function(event) {
-  // On-page links
   if (
     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
     && 
     location.hostname == this.hostname
   ) {
-    // Figure out element to scroll to
-    var target = $(this.hash);
+    let target = $(this.hash);
     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-    // Does a scroll target exist?
     if (target.length) {
-      // Only prevent default if animation is actually gonna happen
       event.preventDefault();
       $('html, body').animate({
         scrollTop: target.offset().top
       }, 1000, function() {
-        // Callback after animation
-        // Must change focus!
-        var $target = $(target);
+        let $target = $(target);
         $target.focus();
-        if ($target.is(":focus")) { // Checking if the target was focused
+        if ($target.is(":focus")) { 
           return false;
         } else {
-          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-          $target.focus(); // Set focus again
+          $target.attr('tabindex','-1');
+          $target.focus(); 
         };
       });
     }
@@ -101,3 +93,15 @@ $('a[href*="#"]')
 });
 
 contactFormSubmit.addEventListener('submit',sendEmail)
+
+
+document.addEventListener('keydown',function(e){
+	if(!e.isTrusted) return
+	if(e.code === 'Escape'){
+		[].forEach.call(closeButtons, function(parent) {
+            parent.parentNode.classList.remove('open')
+            projectOverlay.classList.remove('open')
+		});
+	}
+})
+
