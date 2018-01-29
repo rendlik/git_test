@@ -262,7 +262,7 @@ a {
   position: absolute;
   width: 99%;
   height: 99%;
-  min-height: 460px;
+  min-height: 400px;
   top: -50%;
   left: 50%;
   transform: translate(-50%, -50%);
