@@ -17,8 +17,8 @@ body {
 }
 
 .site-wrap {
-  /*max-width: 900px;*/
-  margin: 1.2em 1.4em;
+  max-width: 900px;
+  margin: 1.2em 1em;
   background:white;
   padding:30px;
   text-align: center;
@@ -28,9 +28,9 @@ body {
   flex:1;
 }
 
-/*.site-right {
+.site-right {
   max-width: 200px;
-  margin: 1.2em 1.4em;
+  margin: 1.2em 1em;
   background:white;
   padding:30px;
   text-align: center;
@@ -38,12 +38,12 @@ body {
   transform: scale(0.98);
   transition: transform 0.5s;
   flex: 1;
-}*/
+}
 
 header {
   text-align: center;
   height:50vh;
-  background:url(head1.jpg) bottom center no-repeat;
+  background:url(head2.jpg) bottom center no-repeat;
   background-size:cover;
   display:flex;
   align-items:center;
@@ -138,6 +138,9 @@ nav a {
   color:white;
   transition:all 0.2s;
   text-transform: uppercase;
+  -webkit-transition: 700ms ease-out;
+  -moz-transition: 700ms ease-out;
+  transition: 700ms ease-out;
 }
 
 nav a:hover{
