@@ -169,7 +169,6 @@ footer{
 }
 
 @media(max-width: 576px){
-  
   nav{
     position:fixed;
     width: 220px;
