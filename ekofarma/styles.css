@@ -168,7 +168,7 @@ footer{
   display: none;
 }
 
-@media screen and (max-width: 576px){
+@media(max-width: 576px){
   
   nav{
     position:fixed;
