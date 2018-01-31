@@ -164,7 +164,23 @@ footer{
   padding-right: 30px;
 }
 
-@media screen and (max-width: 600px){
+.toggle-menu{
+  display: none;
+}
+
+@media screen and (max-width: 576px){
+  
+  nav{
+    position:fixed;
+    width: 220px;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 30px;
+    z-index:10;
+    right: 0; 
+    top: 0; 
+  }
+
   nav ul li{
     box-sizing: border-box;
     width: 100%;
@@ -175,8 +191,15 @@ footer{
     display: block;
   }
 
-  body{
-    background-color: red;
+  .toggle-menu{
+    display:block;
+    position:fixed;
+    right: 10px;
+    top:10px;
+    font-size:1.8em;
+    color: #eeeeee;
+    background: black;
+    z-index: 100;
   }
 }
 
