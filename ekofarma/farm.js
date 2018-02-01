@@ -5,6 +5,10 @@ const navOffsetTop = nav.offsetTop
 
 if(window.innerWidth<576) nav.classList.add("fixed-nav")
 
+window.addEventListener("orientationchange", function() {
+  document.querySelector('body').style.paddingTop = 0 +'px';
+});
+
 window.addEventListener('resize',function(){
   if(window.innerWidth<576) nav.classList.add("fixed-nav"); 
 })
