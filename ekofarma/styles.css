@@ -25,10 +25,10 @@ body {
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
   transform: scale(0.98);
   transition: transform 0.5s;
-  flex:1;
+  /* flex:1; */
 }
 
-.site-right {
+/* .site-right {
   max-width: 200px;
   margin: 1.2em 1em;
   background:white;
@@ -38,11 +38,11 @@ body {
   transform: scale(0.98);
   transition: transform 0.5s;
   flex: 1;
-}
+} */
 
 header {
   text-align: center;
-  height:50vh;
+  height:45vh;
   background:url(head2.jpg) bottom center no-repeat;
   background-size:cover;
   display:flex;
@@ -181,6 +181,9 @@ footer{
     transition: 700ms ease-in-out;
     background: rgba(67, 47, 4, 0.95);
     opacity: .95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   nav.open{
@@ -189,6 +192,10 @@ footer{
 
   nav a{
     padding: 0;
+  }
+  
+  .logo{
+    margin: 0 auto;
   }
 
   nav ul li{
@@ -219,9 +226,8 @@ footer{
     top:10px;
     font-size:1.8em;
     color: #eeeeee;
-    /* background: black; */
     z-index: 10;
-
+    
   }
 
   .menu-button.open{
@@ -229,12 +235,13 @@ footer{
   }
 
   .menu-button span{
+    
     display: block;
     position: absolute;
     height: 5px;
     width: 100%;
-    background: #e0a835;
-    border-radius: 5px;
+    background: #bd8617;
+    border-radius: 6px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);

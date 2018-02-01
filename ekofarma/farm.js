@@ -3,6 +3,13 @@ const buttonMenu = document.querySelector('.menu-button')
 
 const navOffsetTop = nav.offsetTop
 
+if(window.innerWidth<576) nav.classList.add("fixed-nav")
+
+window.addEventListener('resize',function(){
+  if(window.innerWidth<576) nav.classList.add("fixed-nav"); 
+})
+
+
 function fixNav(){
   if(window.innerWidth<576) return
   // console.log(nav.offsetTop, window.scrollY)
