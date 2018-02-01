@@ -6,12 +6,13 @@ const navOffsetTop = nav.offsetTop
 if(window.innerWidth<576) nav.classList.add("fixed-nav")
 
 window.addEventListener("orientationchange", function() {
+  nav.classList.remove("fixed-nav")
   document.querySelector('body').style.paddingTop = 0 +'px';
 });
 
-window.addEventListener('resize',function(){
-  if(window.innerWidth<576) nav.classList.add("fixed-nav"); 
-})
+// window.addEventListener('resize',function(){
+//   if(window.innerWidth<576) nav.classList.add("fixed-nav"); 
+// })
 
 
 function fixNav(){
