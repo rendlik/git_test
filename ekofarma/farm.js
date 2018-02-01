@@ -1,7 +1,8 @@
 const nav = document.querySelector('#main')
+const buttonMenu = document.querySelector('.menu-button')
 
 const navOffsetTop = nav.offsetTop
-console.log(window.innerWidth)
+
 function fixNav(){
   if(window.innerWidth<576) return
   // console.log(nav.offsetTop, window.scrollY)
@@ -15,3 +16,8 @@ function fixNav(){
 }
 
 window.addEventListener('scroll', fixNav)
+
+buttonMenu.addEventListener('click', function(){
+  nav.classList.toggle('open')
+  buttonMenu.classList.toggle('open')
+})
