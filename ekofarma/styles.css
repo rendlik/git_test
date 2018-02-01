@@ -190,6 +190,10 @@ footer{
     right: 0;
   }
 
+  nav.open ul li:first-child{
+    max-width: 100%
+  }
+
   nav a{
     padding: 0;
   }
