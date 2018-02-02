@@ -17,7 +17,7 @@ body {
 }
 
 .site-wrap {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 1.2em 1em;
   background:white;
   padding:30px;
@@ -28,17 +28,40 @@ body {
   /* flex:1; */
 }
 
-/* .site-right {
-  max-width: 200px;
-  margin: 1.2em 1em;
+.site-left {
+  position:absolute;
+  left: -160px;
+  top: 63vh;
+  width: 200px;
   background:white;
-  padding:30px;
+  padding:10px;
   text-align: center;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-  transform: scale(0.98);
-  transition: transform 0.5s;
-  flex: 1;
-} */
+  transition: left 0.5s ease-in-out;
+  opacity: 0.9;
+}
+
+.site-left.fixed{
+  position: fixed;
+}
+
+.site-left:hover, .site-left:focus{
+  left:0px;
+}
+
+.site-left:hover h3, .site-left:focus h3{
+  opacity: 0.5;
+}
+
+.site-left h3{
+ /* word-wrap: break-word;
+  width:1px; */
+  font-size: 3.5vh;
+   float: right;
+   text-orientation: upright;
+   writing-mode: vertical-rl;
+   margin: 0;
+}
 
 header {
   text-align: center;
