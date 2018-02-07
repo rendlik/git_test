@@ -18,6 +18,8 @@ let month = 1
 let extension
 let number = 1
 
+
+
 function selectBtn(){
     selectButtons.forEach(btn=>btn.classList.remove('active'))
     this.classList.add('active')

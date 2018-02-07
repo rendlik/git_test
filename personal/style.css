@@ -129,6 +129,13 @@ h1{
     object-fit: cover;
 }
 
+.main{
+	/* position: absolute; */
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
 @media (max-height:460px){
 	.button{
 		top:60%;
