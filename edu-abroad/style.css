@@ -232,3 +232,18 @@ header div#menu.open{
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+.description{
+	font-size: 0.8rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 3vw;
+}
+
+.description h3{
+	font-size: 1rem;
+}
+
+.description p, .description ul{
+	padding-left: 8px;
+}
