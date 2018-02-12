@@ -111,19 +111,15 @@ header div#menu{
 	transition: 1s ease-out;
 }
 
-header div#menu ul a{
+header div#menu ul li{
 	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
 	text-align: center;
+	cursor: pointer;
 }
 
-header div#menu ul{
-	/*border:1px solid rgba(255,255,255,0.6);
-	border-radius: 10px;
-	padding:10vh 16vw;*/
 
-}
 
 header div#menu.open{
 	opacity: 1;
@@ -185,8 +181,8 @@ header div#menu.open{
 .country-detail.open{
 	opacity: 1;
 	top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
     padding: 30px 70px;
     z-index: 10;
 }
@@ -246,4 +242,35 @@ header div#menu.open{
 
 .description p, .description ul{
 	padding-left: 8px;
+}
+
+.contact{
+	position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 99%;
+	height: 99%;
+	opacity: 0;
+	background: rgba(2, 52, 132,0.98);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 2px;
+	color:#fff;
+	line-height: 1.7;
+	font-size: 2.6vw;
+	-webkit-transition: 1s ease-out 200ms;
+	-moz-transition: 1s ease-out 200ms;
+	-o-transition: 1s ease-out 200ms;
+	transition: 1s ease-out 200ms;
+	z-index: -1;
+}
+
+.contact.open{
+	opacity: 1;
+	top: 50%;
+    /* left: 50%;
+	transform: translate(-50%, -50%); */
+	z-index:10;
 }
