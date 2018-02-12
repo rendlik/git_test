@@ -234,14 +234,14 @@ header div#menu.open{
 }
 
 .description{
-	font-size: 0.8rem;
+	font-size: 1rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 3vw;
 }
 
 .description h3{
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 
 .description p, .description ul{
