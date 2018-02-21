@@ -46,7 +46,7 @@ header button#menu-button{
 	left: 0;
 	border-radius: 9px;
 	height: 7px;
-	background: #D9B310;
+	background: #ba990d;
 	transition: all cubic-bezier(.7,0,.3,1) 0.42s;
 	opacity: 1;
 	-webkit-transform: rotate(0deg);
@@ -117,6 +117,11 @@ header div#menu ul li{
 	font-weight: bold;
 	text-align: center;
 	cursor: pointer;
+	transition: 400ms ease-in-out
+}
+
+header div#menu ul li:hover{
+	color: #ba990d;
 }
 
 
@@ -153,6 +158,16 @@ header div#menu.open{
 .header-item:hover{
 	background: none;
 }
+
+.overlay{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	opacity:0;
+	background: #000;
+	z-index: -1;
+}
+
 
 .country-detail{
 	position: absolute;
@@ -231,9 +246,9 @@ header div#menu.open{
 
 .description{
 	font-size: 1rem;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 3vw;
+	display: flex;
+	flex-direction: column;
+	margin: 0 200px;
 }
 
 .description h3{
@@ -303,5 +318,5 @@ header div#menu.open{
 }
 
 .contact button:hover{
-	background: #D9B310;
+	background: #ba990d;
 }
