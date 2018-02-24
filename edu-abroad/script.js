@@ -32,6 +32,7 @@ document.addEventListener('keydown',function(e){
 	if(e.code === 'Escape'){
 		[].forEach.call(countriesDetail, function(country) {
 			country.classList.remove("open");
+			overlay.classList.remove('open')
 		});
 	}
 })
@@ -41,6 +42,7 @@ document.addEventListener('keydown',function(e){
 	if(e.code === 'Escape'){
 		menu.classList.remove('open')
 		menuButton.classList.remove('active')
+		overlay.classList.remove('open')
 	}
 })
 
