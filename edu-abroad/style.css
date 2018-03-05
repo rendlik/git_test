@@ -250,8 +250,15 @@ header div#menu.open{
 .description{
 	font-size: 1rem;
 	display: flex;
+	flex-wrap: wrap;
+}
+
+.description div{
+	flex-basis: 50%;
+	padding: 10px;
+	display: flex;
+	align-items: center;
 	flex-direction: column;
-	margin: 0 200px;
 }
 
 .description h3{
@@ -259,7 +266,7 @@ header div#menu.open{
 }
 
 .description p, .description ul{
-	padding-left: 8px;
+	text-align: center;
 }
 
 .contact,.about{
@@ -301,7 +308,7 @@ header div#menu.open{
 	display: inline-flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	
+	text-align: center;
 	flex: 1;
 	align-self: center;
 }
@@ -324,4 +331,9 @@ header div#menu.open{
 
 .icons a:hover{
 	color: #ba990d;
+}
+
+.description .icon{
+	color: #ba990d;	
+	margin-bottom: 25px;
 }
