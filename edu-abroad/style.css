@@ -109,7 +109,7 @@ header div#menu{
 	align-items: center;
 	border-radius: 2px;
 	line-height: 1.7;
-	font-size: 4vw;
+	font-size: 3.2rem;
 	-webkit-transition: 1s ease-out;
 	-moz-transition: 1s ease-out;
 	-o-transition: 1s ease-out;
@@ -138,12 +138,14 @@ header div#menu.open{
 
 .header-container{
 	display: flex;
-	height: 50%;
+	height: 100vh;
+	flex-wrap: wrap;
 }
 
 .header-item{
+	flex:1;
+	flex-basis: 33%;
 	background: rgba(255,255,255,0.6);
-	flex: 1;
 	-webkit-transition: .5s ease-out;
 	-moz-transition: .5s ease-out;
 	-o-transition: .5s ease-out;
@@ -152,7 +154,7 @@ header div#menu.open{
   	justify-content: center;
     align-items: center;
     color: rgb(2, 52, 132);
-    font-size: 6vw;
+    font-size: 3.5rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -189,7 +191,7 @@ header div#menu.open{
 	border-radius: 2px;
 	color:#fff;
 	line-height: 1.7;
-	font-size: 2.6vw;
+	font-size: 2.6rem;
 	-webkit-transition: 1s ease-out;
 	-moz-transition: 1s ease-out;
 	-o-transition: 1s ease-out;
@@ -336,4 +338,31 @@ header div#menu.open{
 .description .icon{
 	color: #ba990d;	
 	margin-bottom: 25px;
+}
+
+@media (max-width:768px) {
+	header div#menu{
+		font-size: 2.8rem;
+	}
+
+	.header-item{
+		font-size: 2.8rem;
+	}
+}
+
+@media (max-width:576px) {
+	header div#menu{
+		font-size: 2.2rem;
+	}
+	.header-item{
+		font-size: 2rem;
+		flex-basis: 50%;
+	}
+	.description{
+		font-size: 0.8rem;
+	}
+
+	.description div{
+		flex-basis: 100%;
+	}
 }
