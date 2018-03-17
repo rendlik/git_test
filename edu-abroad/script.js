@@ -5,7 +5,27 @@ const closeButtons = document.querySelectorAll('#close-button')
 const countriesDetail = document.querySelectorAll('.country-detail') 
 const contactLink = document.querySelector('#contact')
 const contactForm = document.querySelector('.contact')
+const scholarshipsLink = document.querySelector('#scholarships')
+const scholarshipsForm = document.querySelector('.scholarships')
 const overlay = document.querySelector(".overlay")
+const scholarshipsLinks = document.querySelectorAll(".nav")
+const scholarshipsDesc = document.querySelectorAll(".scholar")
+
+console.log(scholarshipsDesc)
+
+scholarshipsLinks.forEach(link => link.addEventListener("click",function(){
+	scholarshipsLinks.forEach(link=>link.classList.remove("open"))
+	this.classList.add("open")
+	const linkName = (Array.from(this.classList))[0]
+	scholarshipsDesc.forEach(scholar =>{
+		scholar.classList.remove("open")
+		if(linkName == 	scholar.id){
+			scholar.classList.add("open")
+		}
+	})
+}))
+
+
 
 menuButton.addEventListener('click',function(){
 	menuButton.classList.toggle('active')
@@ -50,5 +70,10 @@ contactLink.addEventListener('click',function(){
 	contactForm.classList.add('open')
 	menu.classList.remove('open')
 	menuButton.classList.remove('active')
-	console.log(1)
+})
+
+scholarshipsLink.addEventListener('click',function(){
+	scholarshipsForm.classList.add('open')
+	menu.classList.remove('open')
+	menuButton.classList.remove('active')
 })

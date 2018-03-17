@@ -6,6 +6,7 @@ body{
 
 a{
 	text-decoration: none;
+	color: #ba990d;
 }
 
 header{
@@ -257,7 +258,7 @@ header div#menu.open{
 
 .description div{
 	flex-basis: 50%;
-	padding: 10px;
+	padding: 20px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -267,11 +268,22 @@ header div#menu.open{
 	font-size: 1.2rem;
 }
 
+.description h2{
+	text-align: center;
+	flex: 100% 1;
+	margin:14px;
+}
+
 .description p, .description ul{
 	text-align: center;
 }
 
-.contact,.about{
+.arrow{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+}
+.contact,.about,.scholarships{
 	position: absolute;
     top: -50%;
     left: 50%;
@@ -300,7 +312,7 @@ header div#menu.open{
 	padding: 80px 0;
 }
 
-.contact.open,.about.open{
+.contact.open,.about.open,.scholarships.open{
 	opacity: 1;
 	top: 50%;
 	z-index:10;
@@ -335,9 +347,57 @@ header div#menu.open{
 	color: #ba990d;
 }
 
-.description .icon{
+.icon{
 	color: #ba990d;	
 	margin-bottom: 25px;
+}
+
+.scholarships{
+	padding:30px;
+	display: block;
+}
+
+.scholar{
+	left:0;
+	opacity:0;
+	position: absolute;
+	transition: opacity 400ms ease-in-out;
+}
+
+.scholar.open{
+	opacity: 1;
+	z-index: 2;
+}
+
+.scholarships nav{
+	border-bottom: 1px solid white;
+	padding: 6px;
+	margin: 20px;
+}
+
+.scholarships nav ul{
+	display: flex;
+	/* justify-content: space-around; */
+}
+
+.scholarships nav ul li{
+	flex: 1;
+	font-size: 0.9rem;
+	text-align: center;
+	cursor: pointer;
+	transition: 400ms ease-in-out;
+}
+
+.scholarships nav ul li.open{
+	color:#ba990d;
+}
+
+.scholarships nav ul li:hover, .scholarships nav ul li:active{
+	color:#ba990d;
+}
+
+.scholar .requirements{
+	flex-basis: 100%;
 }
 
 @media (max-width:768px) {
@@ -364,5 +424,6 @@ header div#menu.open{
 
 	.description div{
 		flex-basis: 100%;
+		padding: 10px;
 	}
 }
