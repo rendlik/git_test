@@ -11,7 +11,7 @@ a{
 
 header{
 	position: relative;
-	background: url('img/header-min.jpeg') no-repeat bottom center scroll;
+	background: url('header-min.jpeg') no-repeat bottom center scroll;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -271,7 +271,7 @@ header div#menu.open{
 .description h2{
 	text-align: center;
 	flex: 100% 1;
-	margin:14px;
+	margin-top:14px;
 }
 
 .description p, .description ul{
@@ -327,6 +327,10 @@ header div#menu.open{
 	align-self: center;
 }
 
+.adr ul li{
+	margin: 5px;
+}
+
 .icons{
 	display: inline-flex;
 	flex-flow: row nowrap;
@@ -359,11 +363,16 @@ header div#menu.open{
 
 .scholar{
 	width:100%;
-	height: 100%;
+	padding: 0 10px;
+	height: 80%;
 	left:0;
 	opacity:0;
 	position: absolute;
 	transition: opacity 400ms ease-in-out;
+}
+
+.scholar div{
+	padding: 10px;
 }
 
 .scholar.open{
@@ -374,7 +383,7 @@ header div#menu.open{
 .scholarships nav{
 	border-bottom: 1px solid white;
 	padding: 6px;
-	margin: 20px;
+	margin: 15px;
 }
 
 .scholarships nav ul{
@@ -410,6 +419,10 @@ header div#menu.open{
 	.header-item{
 		font-size: 2.8rem;
 	}
+
+	.description div{
+		font-size: 0.9rem;
+	}
 }
 
 @media (max-width:576px) {
@@ -420,12 +433,40 @@ header div#menu.open{
 		font-size: 2rem;
 		flex-basis: 50%;
 	}
-	.description{
-		font-size: 0.8rem;
+	.description h2{
+		font-size: 1.2rem;
 	}
 
 	.description div{
+		font-size: 0.7rem;
 		flex-basis: 100%;
 		padding: 10px;
+	}
+
+	.icon{
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width:426px) {
+	header div#menu{
+		font-size: 2rem;
+	}
+	.header-item{
+		font-size: 1.8rem;
+		flex-basis: 50%;
+	}
+	/* .description{
+		font-size: 0.4rem;
+	} */
+
+	.description div{
+		font-size: 0.68rem;
+		flex-basis: 100%;
+		padding: 6px;
+	}
+
+	.icon{
+		margin-bottom: 15px;
 	}
 }
