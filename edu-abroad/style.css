@@ -362,24 +362,24 @@ header div#menu.open {
   color: #ba990d;
 }
 
-.contact-detail{
-	width:50%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+.contact-detail {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.contact-detail h3{
-	flex:1;
+.contact-detail h3 {
+  flex: 1;
 }
 
 .contact-detail form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex:5;
+  flex: 5;
   line-height: 1.2;
-  font-size: 2.2vw
+  font-size: 2.2vw;
 }
 
 .contact-detail form label {
@@ -387,8 +387,6 @@ header div#menu.open {
   text-align: left;
   margin-bottom: 1.5vh;
 }
-
-
 
 .contact-detail form button,
 .contact-detail form textarea,
@@ -485,6 +483,10 @@ header div#menu.open {
   flex-basis: 100%;
 }
 
+.icons-bottom {
+  display: none;
+}
+
 @media (max-width: 768px) {
   header div#menu {
     font-size: 2.8rem;
@@ -497,6 +499,8 @@ header div#menu.open {
   .description div {
     font-size: 0.9rem;
   }
+
+  
 }
 
 @media (max-width: 576px) {
@@ -519,6 +523,26 @@ header div#menu.open {
 
   .icon {
     margin-bottom: 20px;
+  }
+
+  .icons-bottom {
+    display: flex;
+  }
+  .icons {
+    display: none;
+  }
+
+  .adr-icons {
+    height: auto;
+  }
+
+  .contact-detail{
+	  height: auto;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -543,4 +567,10 @@ header div#menu.open {
   .icon {
     margin-bottom: 15px;
   }
+}
+
+@media (max-height:620px){
+	.contact{
+		padding: 20px;
+	}
 }
