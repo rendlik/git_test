@@ -425,6 +425,7 @@ header div#menu.open {
   font-weight: 700;
   transition: 1200ms ease-out;
   cursor: pointer;
+  letter-spacing: 2px;
 }
 
 .contact-detail form button:hover {
@@ -591,8 +592,26 @@ header div#menu.open {
   }
 }
 
-@media (max-height:620px){
+@media (max-height:740px){
 	.contact{
-		padding: 20px;
+		padding: 60px;
+	}
+}
+
+@media (max-height:600px){
+	.contact{
+		padding: 45px;
+	}
+}
+
+@media (max-height:520px){
+	.contact{
+		padding: 30px;
+	}
+}
+
+@media (max-height:400px){
+	.contact{
+		padding: 15px;
 	}
 }
