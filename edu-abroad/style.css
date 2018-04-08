@@ -9,9 +9,30 @@ a{
 	color: #ba990d;
 }
 
+.socials{
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	z-index: 9;
+	top:50%;
+	transform: translate(0, -50%);
+	
+}
+
+.socials a{
+	margin: 10px 24px;
+	transition: 400ms ease-in-out;
+}
+
+.socials a:hover{
+	color: rgba(2, 52, 132);
+}
+
+
+
 header{
 	position: relative;
-	background: url('header-min.jpeg') no-repeat bottom center scroll;
+	background: url('img/header-min.jpeg') no-repeat bottom center scroll;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
