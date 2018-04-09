@@ -386,7 +386,7 @@ header div#menu.open {
 
 .contact-detail {
   width: 50%;
-  height: 100%;
+  height: 99%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -407,7 +407,7 @@ header div#menu.open {
 .contact-detail form label {
   display: block;
   text-align: left;
-  margin-bottom: 1.5vh;
+  margin: 1.5vh 0;
 }
 
 .contact-detail form button,
@@ -549,8 +549,26 @@ header div#menu.open {
   }
 
   .icons-bottom {
-    display: flex;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    flex: .6;
   }
+  
+  .icons-bottom a {
+    color: #fff;
+    -webkit-transition: ease-out 400ms;
+    -moz-transition: ease-out 400ms;
+    -o-transition: ease-out 400ms;
+    transition: ease-out 400ms;
+    margin: 0 10px;
+    
+  }
+  
+  .icons-bottom a:hover {
+    color: #ba990d;
+  }
+
   .icons {
     display: none;
   }
@@ -560,12 +578,14 @@ header div#menu.open {
   }
 
   .contact-detail{
-	  height: auto;
+    height: auto;
+    width: 70%;
   }
 
   .contact {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 }
 
@@ -594,24 +614,24 @@ header div#menu.open {
 
 @media (max-height:740px){
 	.contact{
-		padding: 60px;
-	}
+    padding: 60px 30px;
+  }
 }
 
 @media (max-height:600px){
 	.contact{
-		padding: 45px;
+		padding: 45px 20px;
 	}
 }
 
 @media (max-height:520px){
 	.contact{
-		padding: 30px;
+		padding: 30px 12px;
 	}
 }
 
 @media (max-height:400px){
 	.contact{
-		padding: 15px;
+		padding: 15px 6px;
 	}
 }
