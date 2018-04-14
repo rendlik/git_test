@@ -32,42 +32,93 @@ playText('Hi, so you wanna play some trivia.');
 axios
   .get(url)
   .then(function(res) {
-   
     answerCorrect = res.data.results[0].correct_answer;
     answers = res.data.results[0].incorrect_answers;
     answers.push(answerCorrect);
-    console.log(answers)
-    shuffle(answers)
-    console.log(answers.join("   ,  ,   "))
+    console.log(answers);
+    shuffle(answers);
+    console.log(answers.join('   ,  ,   '));
     category = res.data.results[0].category;
     question = res.data.results[0].question;
     console.log(res.data.results[0]);
     console.log(question);
+
     setTimeout(function() {
-        
+      console.log(1)
       playText('The category is');
     }, timer('Hi, so you wanna play some trivia.'));
-    setTimeout(function() {
-      playText(category);
-    }, timer('Hi, so you wanna play some trivia.')+timer('The category is'));
-    setTimeout(function() {
-      playText(
-        question.replace(/&#(\d{0,4});/g, function(fullStr, str) {
-          return String.fromCharCode(str);
-        })
-      );
-    }, timer('Hi, so you wanna play some trivia.')+timer(category)+timer('The category is'));
-    setTimeout(function() {
-        msg.rate = 0.6
-        playText(answers.join("  , '   '  ,   ").replace(/&#(\d{0,4});/g, function(fullStr, str) {
-            return String.fromCharCode(str);
-          }));
-      }, timer('Hi, so you wanna play some trivia.')+timer(category)+timer(question)+timer('The c'))
 
+    setTimeout(function() {
+      console.log(2)
+      playText(category);
+    }, timer('Hi, so you wanna play some trivia.') + timer('The category is'));
+
+    setTimeout(function() {
+      console.log(3)
+      playText(cleanText(question));
+    }, timer('Hi, so you wanna play some trivia.') +
+      timer(category) +
+      timer('The category is'));
+
+    setTimeout(function() {
+      console.log(4)
+      msg.rate = 0.6;
+      options(answers);
+      playText(cleanText(answers.join("  , '   '  ,   ")));
+      playText(cleanText(answers.join("  , '   '  ,   ")));
+      
+    }, timer('Hi, so you wanna play some trivia.') +
+      timer(category) +
+      timer(question) +
+      timer('The c'));
+
+    setTimeout(function(){
+      console.log("mluv")
+      listen()
+    },timer('Hi, so you wanna play some trivia.') +
+    timer(category) +
+    3*timer(question) +
+    timer('The category is')+
+    timer(answers))
   })
   .catch(function() {
     console.log('err');
   });
+
+function listen() {
+  window.SpeechRecognition =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
+
+  const recognition = new SpeechRecognition();
+  recognition.interimResults = true;
+  recognition.lang = 'en-US';
+
+  recognition.addEventListener('result', e => {
+    const transcript = Array.from(e.results)
+      .map(result => result[0])
+      .map(result => result.transcript)
+      //.join('');
+
+    console.log(transcript)
+  });
+
+  recognition.addEventListener('end', recognition.start);
+
+  recognition.start();
+}
+
+function options(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = String.fromCharCode(65 + i) + ':  ' + arr[i];
+  }
+  return arr;
+}
+
+function cleanText(text) {
+  return text.replace(/&#(\d{0,4});/g, function(fullStr, str) {
+    return String.fromCharCode(str);
+  });
+}
 
 function shuffle(array) {
   var currentIndex = array.length,
@@ -89,11 +140,11 @@ function shuffle(array) {
   return array;
 }
 
-function timer(text){
-    return text.length*100+200
+function timer(text) {
+  return text.length * 100 + 200;
 }
 
-timer('Hi, so you wanna play some trivia.')
+timer('Hi, so you wanna play some trivia.');
 
 function sleep(miliseconds) {
   var currentTime = new Date().getTime();
