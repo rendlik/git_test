@@ -218,6 +218,7 @@ header div#menu.open {
   -o-transition: 1s ease-out;
   transition: 1s ease-out;
   z-index: -1;
+  text-align: center;
 }
 
 .country-detail.open {
@@ -511,6 +512,9 @@ header div#menu.open {
 }
 
 @media (max-width: 768px) {
+  .country-detail{
+    font-size: 5vw;
+  }
   header div#menu {
     font-size: 2.8rem;
   }
@@ -527,6 +531,8 @@ header div#menu.open {
 }
 
 @media (max-width: 576px) {
+  
+
   header div#menu {
     font-size: 2.2rem;
   }
@@ -594,6 +600,9 @@ header div#menu.open {
 }
 
 @media (max-width: 426px) {
+  .country-detail{
+    font-size: 6vw;
+  }
   header div#menu {
     font-size: 2rem;
   }
