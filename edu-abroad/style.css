@@ -6,7 +6,8 @@ body{
 
 a{
 	text-decoration: none;
-	color: #ba990d;
+  color: #ba990d;
+  cursor: pointer;
 }
 
 .socials{
@@ -32,7 +33,7 @@ a{
 
 header{
 	position: relative;
-	background: url('img/header-min.jpeg') no-repeat bottom center scroll;
+	background: url('header-min.jpeg') no-repeat bottom center scroll;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -434,16 +435,19 @@ header div#menu.open {
   background: #ba990d;
 }
 
-.confirmation {
-  background: rgb(72, 157, 72);
-  padding: 6px;
+
+
+
+.error, .confirmation {
+  background: rgb(132, 2, 2);
+  padding: 5px;
   display: none;
+  text-align: center;
+  font-size: 2.2vh;
 }
 
-.error {
-  background: rgb(132, 2, 2);
-  padding: 6px;
-  display: none;
+.confirmation {
+  background: rgb(72, 157, 72);
 }
 
 .icon {
