@@ -1,4 +1,9 @@
 console.log("ahoj")
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.3.1.min.js';
+script.type = 'text/javascript';
+console.log(script)
+document.querySelector('head').appendChild(script);
 
 chrome.runtime.onMessage.addListener(gotMessage)
 
@@ -25,17 +30,26 @@ function gotMessage(message,sender,sendResponse){
         }
         </style>
 
-        <div id="mydivheader">Click here to move</div>
-        <p>Move</p>
-        <p>this</p>
-        <p>DIV</p>
+        <div id="mydivheader">
+        
+        
+    <button id="buttonnnn">Select</button>
+<br/>
+<input type="text" value="Hello World" id="myInput">
 
-        <script src='jdrag.js'></script>        
+        <script src='jdrag.js'></script>   </div>     
     `
+    
+
     const dragDiv = document.createElement('div')
     dragDiv.id = 'mydiv'
     dragDiv.innerHTML = content
     document.body.appendChild(dragDiv)
+
+    document.querySelector("#buttonnnn").addEventListener("click",function(){
+        document.getElementById("myInput").select();
+        document.execCommand('Copy');
+    });
 
     const emails = []
     const elements = Array.from(document.getElementsByTagName("a"));
