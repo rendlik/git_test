@@ -5,14 +5,15 @@
     "content_scripts": [
         {
             "matches":[
-                "<all_urls>"
+                "*://gabriellemoore.zendesk.com/*"
             ],
-            "js": ["content.js"]
+            "js": ["jquery-3.3.1.min.js","content.js"]
+            
         }
     ],
     "background":{
         "scripts":[
-            "background.js"
+            "jquery-3.3.1.min.js","background.js"
         ]
     },
     "browser_action": {
