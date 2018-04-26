@@ -1,0 +1,74 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666; 
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav li{
+    margin: 10px;
+    color: #000;
+    font-size: 1.2rem;
+    z-index: 1000;
+}
+
+.pha,.brno-img,.olmik-img{
+    /* position: relative; */
+    /* opacity: 0.7; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.pha{
+    background-image: url('pha.jpg');
+    min-height: 100%;
+}
+
+.brno-img{
+    background-image: url('brno.jpeg');
+    min-height: 400px;
+}
+
+.olmik-img{
+    background-image: url('olmik.jpeg');
+    min-height: 400px;
+}
+
+section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.pha h1{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 65px;
+}
+
+.krnov{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.krnov h2{
+    flex: 1 100%;
+}
