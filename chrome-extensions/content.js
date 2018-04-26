@@ -42,6 +42,31 @@ function gotMessage(message, sender, sendResponse) {
   copyEmail();
   createEmailList();
 
+  // window.onpopstate = function(event) {
+  //   console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+  // };
+
+  // window.addEventListener("popstate",function(e){
+  //   console.log("JASDJHA")
+  // })
+  
+  const ember = document.querySelector("#ember3169")
+  //onst allElements = document.querySelectorAll("")
+  console.log(ember)
+
+  ember.addEventListener("click",function(){
+    console.log("CCC")
+  })
+
+  // allElements.forEach(el => el.addEventListener("click",function(e){
+  //   e.stopPropagation();
+  //   console.log("click")
+  // },true))
+  // document.addEventListener("click", function(e) {
+  
+  //   console.log(767253643)
+  // })
+
   //window.addEventListener('hashchange', function(e){console.log('hash changed')})
 
   //window.addEventListener('popstate', function(e){console.log('url changed')});
@@ -57,32 +82,32 @@ function gotMessage(message, sender, sendResponse) {
 
   //setInterval(createEmailList,100)
 
-  var currentPage = window.location.href;
-  let urls = [currentPage]
-  console.log(urls)
-  document.addEventListener("click", function() {
-    let timer = 0;
-    let intURLChange = setInterval(function() {
-      if(!urls.includes(window.location.href)){
-        urls.push(window.location.href)
-      }
-      if (currentPage != window.location.href) {
-        // page has changed, set new page as 'current'
-        currentPage = window.location.href;
-        deleteList();
-        createEmailList();
-        // do your thing...
-      }
-      timer++;
-      console.log(timer)
-      if(timer>100){
-        clearInterval(intURLChange)
-        console.log(urls)
-        timer=0
-      }
-    }, 10);
+  // var currentPage = window.location.href;
+  // let urls = [currentPage]
+  // console.log(urls)
+  // document.addEventListener("click", function() {
+  //   let timer = 0;
+  //   let intURLChange = setInterval(function() {
+  //     if(!urls.includes(window.location.href)){
+  //       urls.push(window.location.href)
+  //     }
+  //     if (currentPage != window.location.href) {
+  //       // page has changed, set new page as 'current'
+  //       currentPage = window.location.href;
+  //       deleteList();
+  //       createEmailList();
+  //       // do your thing...
+  //     }
+  //     timer++;
+  //     console.log(timer)
+  //     if(timer>100){
+  //       clearInterval(intURLChange)
+  //       console.log(urls)
+  //       timer=0
+  //     }
+  //   }, 10);
     
-  });
+  // });
 
   // listen for changes
 
