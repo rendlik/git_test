@@ -39,75 +39,62 @@ function gotMessage(message, sender, sendResponse) {
   dragDiv.innerHTML = content;
   document.body.appendChild(dragDiv);
 
-  copyEmail();
-  createEmailList();
-
-  // window.onpopstate = function(event) {
-  //   console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
-  // };
-
-  // window.addEventListener("popstate",function(e){
-  //   console.log("JASDJHA")
-  // })
+  let emails = [];
+  let elements = []
   
-  const ember = document.querySelector("#ember3169")
-  //onst allElements = document.querySelectorAll("")
-  console.log(ember)
 
-  ember.addEventListener("click",function(){
-    console.log("CCC")
-  })
-
-  // allElements.forEach(el => el.addEventListener("click",function(e){
-  //   e.stopPropagation();
-  //   console.log("click")
-  // },true))
-  // document.addEventListener("click", function(e) {
-  
-  //   console.log(767253643)
-  // })
-
-  //window.addEventListener('hashchange', function(e){console.log('hash changed')})
-
-  //window.addEventListener('popstate', function(e){console.log('url changed')});
-
-  //let urls = []
-
-  //function checkChange(){
-  //urls.push(window.location.href)
-  //if(urls[-1] != urls[-2]){
-  //createEmailList()
-  //}
-  //}
-
-  //setInterval(createEmailList,100)
-
-  // var currentPage = window.location.href;
-  // let urls = [currentPage]
-  // console.log(urls)
-  // document.addEventListener("click", function() {
-  //   let timer = 0;
-  //   let intURLChange = setInterval(function() {
-  //     if(!urls.includes(window.location.href)){
-  //       urls.push(window.location.href)
-  //     }
-  //     if (currentPage != window.location.href) {
-  //       // page has changed, set new page as 'current'
-  //       currentPage = window.location.href;
-  //       deleteList();
-  //       createEmailList();
-  //       // do your thing...
-  //     }
-  //     timer++;
-  //     console.log(timer)
-  //     if(timer>100){
-  //       clearInterval(intURLChange)
-  //       console.log(urls)
-  //       timer=0
-  //     }
-  //   }, 10);
+  setInterval(function() {
+    let currentPage = window.location.href;
     
-  // });
+    if (!currentPage.includes("dashboard")) {
+      elements = Array.from(document.querySelectorAll("[href^='mailto']"));
+      
+      createEmailList();
+      copyEmail();
+    } else{
+      deleteList();
+      emails.splice(0,emails.length)
+      elements.splice(0,elements.length)
+      console.log(" dash  " + elements.length );
+    }
+  }, 1000);
+
+  function copyEmail() {
+    document.querySelectorAll(".btn-email").forEach(btn =>
+      btn.addEventListener("click", function() {
+        console.log(this);
+        document.getElementById(this.previousElementSibling.id).select();
+        document.execCommand("Copy");
+      })
+    );
+  }
+
+  function createEmailList() {
+    
+    const myNode = document.querySelector("#emails");
+
+    console.log({ elements });
+    console.log({ emails });
+    for (let i = 0; i < elements.length; i++) {
+      let email = elements[i].innerText;
+      if (!emails.includes(email) && email != "helpme@gabriellemoore.com") {
+        emails.push(email);
+        const content = `
+        <input type="text" class="input-email" value="${email}" id="${i}"> 
+        <button class="btn-email" id="${i}">Copy</button>`;
+        const emailDiv = document.createElement("div");
+        emailDiv.innerHTML = content;
+        myNode.appendChild(emailDiv);
+      }
+    }
+  }
+
+  function deleteList() {
+    const myNode = document.querySelector("#emails");
+    while (myNode.firstChild) {
+      myNode.removeChild(myNode.firstChild);
+    }
+  }
 
   // listen for changes
 
@@ -157,43 +144,81 @@ function gotMessage(message, sender, sendResponse) {
   }
 }
 
-function copyEmail() {
-  document.querySelectorAll(".btn-email").forEach(btn =>
-    btn.addEventListener("click", function() {
-      document.getElementById(this.previousElementSibling.id).select();
-      document.execCommand("Copy");
-    })
-  );
-}
-
-const emails = [];
-let counter = 0;
-
-function createEmailList() {
-  const elements = Array.from(document.querySelectorAll("[href^='mailto']"));
-  const myNode = document.querySelector("#emails");
-  let nbrEl = 0;
-
-  for (let i = 0; i < elements.length; i++) {
-    const email = elements[i].innerText;
-    if (!emails.includes(email) && email != "helpme@gabriellemoore.com") {
-      console.log(email);
-      emails.push(email);
-      const content = `
-      <input type="text" class="input-email" value="${email}" id="${i}"> <button class="btn-email" id="${i}">Copy</button>`;
-      const emailDiv = document.createElement("div");
-      emailDiv.innerHTML = content;
-      myNode.appendChild(emailDiv);
-      nbrEl++;
-    }
-  }
-}
-
-function deleteList() {
-  const myNode = document.querySelector("#emails");
-  while (myNode.firstChild) {
-    myNode.removeChild(myNode.firstChild);
-  }
-}
-
 // Observe a specific DOM element:
+
+// let currentPage = window.location.href;
+
+// document.addEventListener("mousemove", function() {
+//   let currentPage = window.location.href;
+//   if (currentPage.includes("dashboard")) {
+//     deleteList()
+//     console.log(emails)
+//   }
+// });
+
+// window.onpopstate = function(event) {
+//   console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+// };
+
+// window.addEventListener("popstate",function(e){
+//   console.log("JASDJHA")
+// })
+
+// const ember = document.querySelector("#ember3169")
+// //onst allElements = document.querySelectorAll("")
+// console.log(ember)
+
+// ember.addEventListener("click",function(){
+//   console.log("CCC")
+// })
+
+// allElements.forEach(el => el.addEventListener("click",function(e){
+//   e.stopPropagation();
+//   console.log("click")
+// },true))
+// document.addEventListener("click", function(e) {
+
+//   console.log(767253643)
+// })
+
+//window.addEventListener('hashchange', function(e){console.log('hash changed')})
+
+//window.addEventListener('popstate', function(e){console.log('url changed')});
+
+//let urls = []
+
+//function checkChange(){
+//urls.push(window.location.href)
+//if(urls[-1] != urls[-2]){
+//createEmailList()
+//}
+//}
+
+//setInterval(createEmailList,100)
+
+// var currentPage = window.location.href;
+// let urls = [currentPage]
+// console.log(urls)
+// document.addEventListener("click", function() {
+//   let timer = 0;
+//   let intURLChange = setInterval(function() {
+//     if(!urls.includes(window.location.href)){
+//       urls.push(window.location.href)
+//     }
+//     if (currentPage != window.location.href) {
+//       // page has changed, set new page as 'current'
+//       currentPage = window.location.href;
+//       deleteList();
+//       createEmailList();
+//       // do your thing...
+//     }
+//     timer++;
+//     console.log(timer)
+//     if(timer>100){
+//       clearInterval(intURLChange)
+//       console.log(urls)
+//       timer=0
+//     }
+//   }, 10);
+
+// });

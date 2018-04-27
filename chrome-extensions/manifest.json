@@ -5,7 +5,7 @@
     "content_scripts": [
         {
             "matches":[
-                "*://gabriellemoore.zendesk.com/*","<all_urls>"
+                "*://gabriellemoore.zendesk.com/*"
             ],
             "js": ["jquery-3.3.1.min.js","content.js"]
             
