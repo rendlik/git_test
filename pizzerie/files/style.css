@@ -9,8 +9,9 @@ html,body{
 }
 
 nav{
-    position: fixed;
+    position: absolute;
     width: 100%;
+    padding-right: 15px; 
 }
 
 nav ul{
@@ -20,10 +21,11 @@ nav ul{
 }
 
 nav li{
-    margin: 10px;
-    color: #000;
+    margin: 10px 15px;
+    color: rgb(121, 115, 115);
     font-size: 1.2rem;
     z-index: 1000;
+    font-weight: 600;
 }
 
 .pha,.brno-img,.olmik-img{
@@ -69,6 +71,17 @@ section{
     flex-wrap: wrap;
 }
 
+.krnov .map{
+    flex: 1.5;
+    flex-basis: 6%;
+    height: 30vw;
+}
+
+.krnov .adr{
+    flex:1;
+}
+
 .krnov h2{
     flex: 1 100%;
 }
+
