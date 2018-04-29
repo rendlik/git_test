@@ -17,6 +17,8 @@ $(document).ready(function(){
             const sectionOffset = $(this.hash).offset().top-0.5*$(window).height();
             console.log(scrollbarLocation)
             if (sectionOffset <= scrollbarLocation){
+                console.log(scrollbarLocation)
+                console.log($(this))
                 $(this).addClass('active')
                 $(this).siblings().removeClass('active')
             }else if(scrollbarLocation < 0.5*$(window).height()){
