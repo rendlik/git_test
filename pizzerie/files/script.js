@@ -23,4 +23,12 @@ $(document).ready(function(){
             }
         })
     })
+
+    const hamburger = $('#hamburger')
+    const menu = $('#menu')
+
+    hamburger.click(function(){
+        $(this).toggleClass('active')
+        menu.toggleClass('open')
+    })
 })
