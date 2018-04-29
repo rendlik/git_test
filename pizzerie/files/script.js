@@ -4,6 +4,8 @@ $(document).ready(function(){
     //smooth scrolling to the section
     scrollLinks.click(function(e){
         e.preventDefault();
+        menu.removeClass('open')
+        hamburger.removeClass('active')
         $('body,html').animate({
             scrollTop: $(this.hash).offset().top - 50 +'px'
         },800)

@@ -143,6 +143,12 @@ section {
 
 #krnov .adr li:last-child {
   margin-top: 10px;
+  
+}
+
+#krnov .adr a{
+  color:rgb(88, 88, 88);
+  cursor: pointer;
 }
 
 #krnov h2 {
@@ -298,7 +304,7 @@ section {
     right: 20px; 
     z-index: 20000;
     cursor: pointer;
-    transition:350ms linear 150ms ;
+    transition:350ms ease-out 150ms ;
   }
 
   #hamburger.active{
@@ -312,7 +318,7 @@ section {
     margin-bottom: 5px;
     position: relative;
 
-    background: #232323;
+    background: #ed6880;
     border-radius: 3px;
 
     z-index: 1;
@@ -334,7 +340,7 @@ section {
   #hamburger.active span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -3px);
-    background: #cdcdcd;
+    /* background: #cdcdcd; */
     /* background: #232323; */
   }
 
