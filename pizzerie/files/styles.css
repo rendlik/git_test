@@ -292,6 +292,13 @@ section {
 }
 
 @media (max-width: 578px) {
+  #pha,
+  .brno-img,
+  .olmik-img,
+  .ova {
+
+    background-attachment: scroll;
+  }
   nav {
     background-color: transparent;
     right: 0;
