@@ -8,36 +8,56 @@ html,body{
     color: #666; 
 }
 
+a{
+    text-decoration: none;
+}
+
 nav{
-    position: absolute;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     padding-right: 15px; 
+    height: 50px;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    height: 100%;
 }
 
-nav li{
-    margin: 10px 15px;
-    color: rgb(121, 115, 115);
+nav a{
+    padding: 10px 15px;
+    
+    color: #fff;
     font-size: 1.2rem;
     z-index: 1000;
     font-weight: 600;
+    transition: 400ms ease-out;
 }
 
-.pha,.brno-img,.olmik-img{
+nav a:hover{
+    color: rgb(187, 186, 186);
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.pha,.brno-img,.olmik-img,.ova{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
+    
 }
 
 .pha{
     background-image: url('pha.jpg');
     min-height: 100%;
+}
+
+.ova{
+    background-image: url('pha.jpg'); 
+    min-height: 300px;
 }
 
 .brno-img{
@@ -60,49 +80,51 @@ section{
     top:50%;
     width: 100%;
     text-align: center;
-    color: #000;
     font-size: 65px;
+    color: #fff;
 }
 
-.krnov{
+#krnov{
     display: flex;
     flex-wrap: wrap;
 }
 
-.krnov .map{
+#krnov .map{
     flex: 1.5;
     flex-basis: 6%;
     height: 30vw;
 }
 
-.krnov .adr{
+#krnov .adr{
     flex:1;
 }
 
-.krnov h2{
+#krnov h2{
     flex: 1 100%;
+    margin-bottom: 10px;
 }
 
-.brno{
+#brno{
     display: grid;
     grid-template-columns: 2fr 1fr;
     text-align: justify;
     flex:1;
-    grid-gap: 20px;
+    grid-column-gap: 7vw;
 }
 
-.brno h3{
+#brno h2{
     text-align: center;
+    margin-bottom: 10px; 
 }
 
-.brno .hours{
+#brno .hours{
     grid-column-start: 2;
     grid-column-end: 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.brno .hours a{
+#brno .hours a{
     grid-column-start: 1; 
     grid-column-end: 3;
     text-align: center;
@@ -116,17 +138,20 @@ section{
     transition: 600ms ease-out;
 }
 
-.brno .hours a:hover{
+#brno .hours a:hover{
     opacity: 0.8;
 }
 
-.brno p{
+#brno p{
     grid-row-start: 2;
     grid-row-end:3;
 
 }
 
-
-.brno .right{
+#brno .right{
     text-align: right;
+}
+
+.footer{
+   height: 200px;
 }
