@@ -36,7 +36,7 @@ function Circle(x,y,dx,dy,radius){
 let circleArr = []
 
 
-for(let i = 0; i < 100;i++){
+for(let i = 0; i < 1000;i++){
     let radius = 50
     let x = Math.random()*(innerWidth - 2*radius) +radius
     let y = Math.random()*(innerWidth- 2*radius) +radius
@@ -47,16 +47,12 @@ for(let i = 0; i < 100;i++){
     circleArr.push(new Circle(x,y,dx,dy,radius))
 }
 
-console.log(circleArr)
-
-
-
 function animate(){
     requestAnimationFrame(animate)
 
     c.clearRect(0,0,innerWidth,innerHeight)
 
-    for(let i = 0; i < 100;i++){
+    for(let i = 0; i < circleArr.length;i++){
         circleArr[i].update()
     }
     
