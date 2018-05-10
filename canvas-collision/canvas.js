@@ -124,8 +124,8 @@ function Circle(x, y, radius, color) {
   this.radius = radius;
   this.color = color;
   this.velocity = {
-    x:(Math.random()+1) *  randomIntFromRange(2,4) * (Math.random() > 0.5  ? 1 : -1),
-    y:(Math.random()+1) *  randomIntFromRange(2,4) * (Math.random() > 0.5  ? 1 : -1)
+    x:(Math.random()+2) *  randomIntFromRange(2,4) * (Math.random() > 0.5  ? 1 : -1),
+    y:(Math.random()+2) *  randomIntFromRange(2,4) * (Math.random() > 0.5  ? 1 : -1)
   };
   this.mass = 1;
   this.opacity = 0;
@@ -143,13 +143,13 @@ function Circle(x, y, radius, color) {
   this.update = (circles, line) => {
     this.draw();
 
-    if(counter<200){
+    if(counter<120){
         const incrementX =this.initVel.x > 0  ? 2 : -2
         const incrementY =this.initVel.y > 0  ? 2 : -2
         this.velocity.x = (Math.random()-0.5) * incrementX
         this.velocity.y = (Math.random()-0.5) * incrementY
     }
-    else if(counter == 201){
+    else if(counter == 121){
         this.velocity.x = this.initVel.x
         this.velocity.y = this.initVel.y 
     }
@@ -176,12 +176,23 @@ function Circle(x, y, radius, color) {
     this.y += this.velocity.y;
 
     if (this.x - this.radius <= 0 || this.x + this.radius >= innerWidth) {
-      this.velocity.x = -this.velocity.x ;
+        if(counter>500){
+            this.velocity.x = (this.initCor.x -this.x)/50
+            this.velocity.y = Math.abs(this.initCor.y -this.y)/50
+        }else{
+            this.velocity.x = -this.velocity.x ;
+        }
+
       
     }
 
     if (this.y - this.radius <= 0 || this.y + this.radius >= innerHeight) {
-      this.velocity.y = -this.velocity.y;
+        if(counter>500){
+            this.velocity.y = (this.initCor.y -this.y)/50
+            this.velocity.x = Math.abs(this.initCor.x -this.x)/50
+        }else{
+            this.velocity.y = -this.velocity.y ;
+        }
       
     }
 
@@ -192,7 +203,7 @@ function Circle(x, y, radius, color) {
       this.opacity = Math.max(0, this.opacity);
     }
 
-    if (counter > 260) {
+    if (counter > 180) {
       for (let i = 0; i < circles.length; i++) {
         if (distance(this.x, this.y, this.initCor.x, this.initCor.y) < 20) {
           this.velocity.x = 0;
@@ -293,7 +304,7 @@ function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, canvas.width, canvas.height);
   counter++;
-//   console.log(counter)
+  console.log(counter)
   // c.fillText('HTML CANVAS BOILERPLATE', mouse.x, mouse.y)
   circles.forEach(circle => circle.update(circles));
   //   line.forEach(l => l.draw());
