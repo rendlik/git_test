@@ -186,24 +186,53 @@ function animate() {
 init();
 animate();
 
-var container = document.querySelector('canvas');
-var listener = SwipeListener(container);
-container.addEventListener('swipe', function(e) {
-  var directions = e.detail.directions;
-  if (directions.top) {
-    closeCanvas();
-  } else if (directions.right) {
-    document.querySelector('canvas').classList.add('right');
-  } else if (directions.left) {
-    document.querySelector('canvas').classList.add('left');
-  } else if (directions.bottom) {
-    document.querySelector('canvas').classList.add('bottom');
-  }
-});
+// var container = document.querySelector('canvas');
+// var listener = SwipeListener(container);
+// container.addEventListener('swipe', function(e) {
+//   var directions = e.detail.directions;
+//   if (directions.top) {
+//     closeCanvas();
+//   } else if (directions.right) {
+//     document.querySelector('canvas').classList.add('right');
+//   } else if (directions.left) {
+//     document.querySelector('canvas').classList.add('left');
+//   } else if (directions.bottom) {
+//     document.querySelector('canvas').classList.add('bottom');
+//   }
+// });
 
-document.addEventListener('keydown', function(e) {
-  if (!e.isTrusted) return;
-  if (e.code === 'Escape' || e.code === 'Space') {
-    closeCanvas();
+// document.addEventListener('keydown', function(e) {
+//   if (!e.isTrusted) return;
+//   if (e.code === 'Escape' || e.code === 'Space') {
+//     closeCanvas();
+//   }
+// });
+
+let startingX
+
+canvas.addEventListener('touchstart',function(e){
+  startingX = e.touches[0].clientX
+  console.log(startingX)
+})
+
+
+canvas.addEventListener('touchmove',function(e){
+ const touchX = e.touches[0].clientX
+ const change = startingX - touchX
+
+ canvas.style.left = '-'+change+'px';
+ e.preventDefault()
+})
+
+canvas.addEventListener('touchend',function(e){
+  const treshold = screen.width/3
+  const change = e.changedTouches[0].clientX - startingX
+
+  if(change < treshold){
+    canvas.style.left = '-100%'
+    canvas.style.display = 'none'
+  }else{
+    canvas.style.transition = 'all 300ms'
+    canvas.style.left = '0'
   }
-});
+ })
