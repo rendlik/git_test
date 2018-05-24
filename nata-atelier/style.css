@@ -34,7 +34,7 @@ nav {
 
 nav .title{
   position: absolute;
-  width: 100vw;
+  width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@ nav .title{
 
 nav .underlay{
   height: 20vh;
-  width: 100vw;
+  width: 100%;
 }
 
 nav .title.active{
