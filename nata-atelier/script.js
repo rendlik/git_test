@@ -41,9 +41,31 @@ hamburger.addEventListener('click',(e)=>{
 // })
 
 window.addEventListener('load', () => {
+	const widthW = window.innerWidth
+	const removePic = document.querySelectorAll('.rm-small')
+	let nbrRemove = removePic.length
+	
+	if(widthW < 389){
+		nbrRemove =removePic.length 
+	}else if(widthW < 540){
+		nbrRemove = removePic.length-1
+	}else if(widthW < 740){
+		nbrRemove = removePic.length -2
+	}else{
+		nbrRemove = 0
+	}
+
+	console.log(nbrRemove)
+
+	for(let i = 0; i<nbrRemove;i++) {
+		document.querySelector('figure').removeChild(removePic[i])
+	}
+
 	var
 		carousels = document.querySelectorAll('.carousel')
 	;
+
+
 
 	for (var i = 0; i < carousels.length; i++) {
 		carousel(carousels[i]);
@@ -51,14 +73,14 @@ window.addEventListener('load', () => {
 });
 
 function carousel(root) {
+	const figure = root.querySelector('figure')
 	var
-		figure = root.querySelector('figure'),
+		
 		// nav = root.querySelector('nav'),
 		images = figure.children,
 		n = images.length,
-		gap = root.dataset.gap || 0,
+		gap = root.dataset.gap || window.innerWidth/22,
 		bfc = 'bfc' in root.dataset,
-		
 		theta =  2 * Math.PI / n,
 		currImage = 0
 	;
@@ -75,12 +97,12 @@ function carousel(root) {
 			apothem = s / (2 * Math.tan(Math.PI / n))
 		;
 		
-		figure.style.transformOrigin = `50% 50% ${- apothem}px`;
+		figure.style.transformOrigin = `50% 50% ${-apothem}px`;
 
 		for (var i = 0; i < n; i++)
 			images[i].style.padding = `${gap}px`;
 		for (i = 1; i < n; i++) {
-			images[i].style.transformOrigin = `50% 50% ${- apothem}px`;
+			images[i].style.transformOrigin = `50% 50% ${-apothem}px`;
 			images[i].style.transform = `rotateY(${i * theta}rad)`;
 		}
 		if (bfc)

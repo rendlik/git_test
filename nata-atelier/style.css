@@ -165,7 +165,7 @@ nav h3 {
 }
 
 .carousel figure {
-  width: 20%;
+  width: 55%;
   transform-style: preserve-3d;
   transition: transform 2400ms;
   /* transform-origin: 50% 50% var(--apothem);  */
@@ -186,3 +186,28 @@ nav h3 {
   /* transform-origin: 50% 50% var(--apothem); */
 }
 
+.pha{
+  display:flex;
+  
+}
+
+@media (max-width: 968px){
+  .carousel figure {
+    width: 70%;
+  }
+ 
+}
+
+@media (max-width: 498px){
+  .carousel figure {
+    width: 80%;
+  }
+ 
+}
+
+@media (max-width: 388px){
+  .carousel figure {
+    width: 90%;
+  }
+ 
+}
