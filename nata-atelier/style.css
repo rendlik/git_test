@@ -8,6 +8,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #3a3c3e;
   font-weight: 300;
+  text-align: center;
 }
 
 a {
@@ -165,7 +166,7 @@ nav h3 {
 }
 
 .carousel figure {
-  width: 55%;
+  width: 60%;
   transform-style: preserve-3d;
   transition: transform 2400ms;
   /* transform-origin: 50% 50% var(--apothem);  */
@@ -191,6 +192,42 @@ nav h3 {
   
 }
 
+.headline{
+  font-weight: 300;
+}
+
+footer{
+  background: #f6f4ef;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+footer p, .socials{
+  margin: 7px;
+}
+
+.socials a{
+  margin: 3px;
+}
+
+.weddings{
+  margin: 30px 10px;
+}
+
+.photos img{
+  width: 190px;
+  margin: 1%;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 400ms;
+}
+
+.photos img:hover{
+  opacity: 0.7;
+}
+
 @media (max-width: 968px){
   .carousel figure {
     width: 70%;
@@ -198,7 +235,7 @@ nav h3 {
  
 }
 
-@media (max-width: 498px){
+@media (max-width: 500px){
   .carousel figure {
     width: 80%;
   }

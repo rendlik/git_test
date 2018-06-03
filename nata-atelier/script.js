@@ -47,11 +47,16 @@ window.addEventListener('load', () => {
 	
 	if(widthW < 389){
 		nbrRemove =removePic.length 
-	}else if(widthW < 540){
-		nbrRemove = removePic.length-1
-	}else if(widthW < 740){
-		nbrRemove = removePic.length -2
-	}else{
+	}else if(widthW < 501){
+		nbrRemove = removePic.length-2
+	}else if(widthW < 680){
+		nbrRemove = removePic.length -3
+	}else if(widthW < 790){
+		nbrRemove = removePic.length -4
+	}else if(widthW < 940){
+		nbrRemove = removePic.length -5
+	}
+	else{
 		nbrRemove = 0
 	}
 
@@ -79,7 +84,7 @@ function carousel(root) {
 		// nav = root.querySelector('nav'),
 		images = figure.children,
 		n = images.length,
-		gap = root.dataset.gap || window.innerWidth/22,
+		gap = root.dataset.gap || window.innerWidth/28,
 		bfc = 'bfc' in root.dataset,
 		theta =  2 * Math.PI / n,
 		currImage = 0
