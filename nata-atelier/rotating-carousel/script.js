@@ -95,7 +95,7 @@ function carousel(root) {
 		// nav = root.querySelector('nav'),
 		images = figure.children,
 		n = images.length,
-		gap = root.dataset.gap || window.innerWidth/28,
+		gap = root.dataset.gap || 0,
 		bfc = 'bfc' in root.dataset,
 		theta =  2 * Math.PI / n,
 		currImage = 0

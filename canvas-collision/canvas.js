@@ -212,7 +212,7 @@ let startingX
 
 canvas.addEventListener('touchstart',function(e){
   startingX = e.touches[0].clientX
-  console.log(startingX)
+
 })
 
 

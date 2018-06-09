@@ -74,4 +74,4 @@ function arrayFrom(arrayLikeObject){
     return [].slice.call(arrayLikeObject)
 }
 
-setInterval(changePic,3000)
+setInterval(changePic,10000)
