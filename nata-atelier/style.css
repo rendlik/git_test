@@ -74,7 +74,7 @@ nav h3 {
   /* width:33px; */
   top: 4vh;
   left: 20px;
-  z-index: 20000;
+  z-index: 200;
   cursor: pointer;
   transition: 350ms ease-out 150ms;
 }
@@ -331,4 +331,24 @@ footer p,
 
 .project{
   padding: 6vh 8vw;
+}
+
+.my-gallery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px;
+}
+.my-gallery figcaption {
+  display: none;
 }
