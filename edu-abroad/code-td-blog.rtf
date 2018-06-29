@@ -1,0 +1,269 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 .video-toolbar-inner .like-dislike, .video-toolbar-inner .clearfix\{ \
+display:none;\
+\}\
+\
+.video-toolbar-inner .tm-share-this\{\
+float:right;\
+\}\
+\
+// FOOTER CODE\
+\
+<script src="https://apis.google.com/js/platform.js"></script>\
+\
+<script>\
+const socials= document.createElement('div');\
+socials.className = "socials-btns";\
+document.querySelector('.video-toolbar-inner .clearfix').appendChild(socials)\
+\
+// INTRAGRAM\
+\
+const instaIcon= document.createElement('div');\
+instaIcon.className = "insta-icon-btn";\
+const content4 = `<a href="https://www.instagram.com/tribudigital/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a> `\
+instaIcon.innerHTML = content4\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(instaIcon)\
+\
+const instaFollow= document.createElement('div');\
+instaFollow.className = "insta-follow-btn";\
+const content3 = `<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BiSO8a0Ak6B/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BiSO8a0Ak6B/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Alex Berezowsky (@tribudigital)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-05-02T18:20:33+00:00">May 2, 2018 at 11:20am PDT</time></p></div></blockquote> `\
+instaFollow.innerHTML = content3\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(instaFollow)\
+\
+// YOUTUBE\
+\
+const ytIcon= document.createElement('div');\
+ytIcon.className = "yt-icon-btn";\
+const content5 = `<a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-3x"></i></a> `\
+ytIcon.innerHTML = content5\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(ytIcon)\
+\
+const ytSubscribe= document.createElement('div');\
+ytSubscribe.className = "yt-subscribe-btn";\
+const content2 = `<div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-theme="dark" data-count="hidden"></div>`\
+ytSubscribe.innerHTML = content2\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(ytSubscribe)\
+\
+\
+// FACEBOOK\
+\
+const fbIcon= document.createElement('div');\
+fbIcon.className = "fb-icon-btn";\
+const content6 = `<a href="https://www.facebook.com/tribudigital/" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a> `\
+fbIcon.innerHTML = content6\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(fbIcon)\
+\
+const fbLike= document.createElement('div');\
+fbLike.className = "fb-like-btn";\
+const content1 = `<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Ftribudigital%2F&width=63&layout=button&action=like&size=large&show_faces=false&share=false&height=65&appId" width="100" height="30" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>`\
+fbLike.innerHTML = content1\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(fbLike)\
+\
+\
+\
+\
+\
+const cover1= document.createElement('div');\
+cover1.className = "cover1";\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(cover1)\
+\
+const cover2= document.createElement('div');\
+cover2.className = "cover2";\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(cover2)\
+\
+const cover3= document.createElement('div');\
+cover3.className = "cover3";\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(cover3)\
+\
+const line = document.createElement('div');\
+line.className = "line";\
+document.querySelector('.video-toolbar-inner .clearfix .socials-btns').appendChild(line)\
+\
+</script>\
+\
+<script async defer src="//www.instagram.com/embed.js"></script>\
+\
+<style>\
+.insta-follow-btn\{\
+//position:absolute;\
+     margin-left: -113px;\
+    z-index:18;\
+    height: 54px;\
+    overflow: hidden;\
+   width: 250px;\
+    margin-top:-5px;\
+\}\
+\
+.insta-icon-btn\{\
+    position: absolute;\
+    z-index: 20;\
+    margin-left: 12px;\
+    color: #e4405f;\
+\}\
+\
+.yt-icon-btn\{\
+    position: absolute;\
+    z-index: 20;\
+    margin-left: 145px;\
+    color: #ff0000;\
+\}\
+\
+.yt-subscribe-btn\{\
+    background-color: white;\
+    padding: 6px 0;\
+    position:absolute;\
+    margin-left: 199px;\
+    margin-top: 3px;\
+    z-index:18;\
+    width: 85px;\
+\}\
+\
+.fb-icon-btn\{\
+    position: absolute;\
+    z-index: 20;\
+    margin-left: 306px;\
+    color: #3b5998;\
+\}\
+\
+.fb-like-btn\{\
+    background-color: white;\
+  //padding: 8px 0;\
+  //display: inline-block;\
+  padding-left: 18px;\
+  //margin-top: 18px;\
+  position:absolute;\
+  z-index:19;\
+  margin-left: 333px;\
+    margin-top: 3px;\
+\}\
+\
+.socials-btns\{\
+    display: flex;\
+    flex-direction: column;\
+    justify-content: center;\
+    height:68px;\
+\
+\}\
+\
+.socials-btns a:hover\{\
+opacity:0.75;\
+color:inherit;\
+\}\
+\
+\
+.cover1\{\
+    width: 249px;\
+    height: 8px;\
+    position: absolute;\
+    background-color: white;\
+    z-index: 19;\
+    //margin-left: 33px;\
+    //margin-top: -28px;\
+    transform: translate(0px, -29px);\
+\
+\}\
+\
+.cover2\{\
+     width: 3px;\
+    height: 50px;\
+    position: absolute;\
+    background-color: white;\
+    z-index: 19;\
+    margin-left:  144px;\
+    margin-top: -4px;\
+\}\
+\
+.cover3\{\
+  width: 33px;\
+    height: 50px;\
+    position: absolute;\
+    background-color: white;\
+    z-index: 19;\
+    //margin-left:  144px;\
+    margin-top: 4px;\
+\}\
+\
+.line\{\
+width: 1px;\
+    height: 50px;\
+    position: absolute;\
+    background-color:  #DBDBDB;\
+    z-index: 19;\
+    margin-left:  294px;\
+    \
+\}\
+\
+@media (max-width: 767px)\{\
+.socials-btns\{\
+    height:58px;\
+\}\
+.cover1\{\
+transform: translate(0px, -25px);\
+\}\
+\}\
+\
+@media (max-width: 550px)\{\
+.socials-btns i\{\
+  font-size: 260%;\
+\}\
+\
+.insta-icon-btn\{\
+    margin-left: 6px;\
+\}\
+\
+.insta-follow-btn\{\
+margin-top: -3px;\
+margin-left: -124px;\
+\}\
+\
+.yt-icon-btn\{\
+    margin-left: 133px;\
+\}\
+\
+.yt-subscribe-btn\{\
+    margin-left: 182px;\
+\}\
+\
+.fb-icon-btn\{\
+    margin-left: 288px;\
+\}\
+\
+.fb-like-btn\{\
+    margin-left: 312px;\
+    margin-top: 4px;\
+\}\
+.line\{\
+    margin-left: 276px;\
+\}\
+\}\
+\
+@media (max-width: 526px)\{\
+.socials-btns i\{\
+  font-size: 360%;\
+\}\
+\
+.socials-btns\{\
+    flex-direction: row;\
+    justify-content: space-evenly;\
+    align-items: center;\
+\}\
+\
+.insta-icon-btn,.yt-icon-btn, .fb-icon-btn\{\
+    position: static;\
+    margin-left: 0;\
+\}\
+\
+.insta-follow-btn, .fb-like-btn, .yt-subscribe-btn, .cover1, .cover2, .cover3,.line\{\
+display:none;\
+\}\
+\
+\}\
+\
+\
+</style>}
