@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "League";
+    src: url("fonts/LeagueGothic-Regular.otf");
+}
+
+@font-face {
+    font-family: "latoc";
+    src: url("fonts/Lato-Regular.ttf");
+    src: url("fonts/Lato-Bold.ttf")
+}
+
+@font-face {
+    font-family: "myriad";
+    src: url("fonts/Myriad.ttf");
+   
+}
+
+header,footer{
+    background: #3B3B3B;
+    padding:15px;
+    text-align: center;
+}
+
+header img,footer img{
+width: 15%;
+max-width: 350px;
+min-width: 100px;
+}
+
+.col{
+    display: flex;
+}
+
+.rightCol, .leftCol{
+    flex-basis: 62%;
+    background: #3B3B3B;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    font-size: 1.6em;
+    color:#3B3B3B;
+    font-family: 'myriad', sans-serif;
+    font-weight: 300;
+    width: 100vw;
+    line-height: 1.1;
+}
+
+.text{
+    padding:2vw;
+}
+
+.links a{
+    text-decoration: none;
+    color:#C0C0C0;
+    font-size: 0.6em;
+    margin-left: 6px;
+}
+
+h1,h2{
+    color: #B92D25;
+    text-align: center;
+    font-family: "League", sans-serif;
+    line-height: 1;
+}
+
+h2{
+    font-size: 2.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.f1 p.objectivo,.f2 p.objectivo,.f3 p.objectivo,.f4 p.objectivo{
+    margin-bottom:16px;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 500;
+    margin: 20px auto auto 14px;
+}
+
+.afiliado{
+    margin-bottom: -30px;
+}
+
+.invito{
+    margin: auto 6vw;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+
+h3{
+    font-family: "League", sans-serif;
+}
+
+
+
+.lanzamiento,.under{
+    text-decoration: underline;
+
+}
+
+.green{
+    /* color:#fff; */
+    /* background: #49722D; */
+    text-decoration: underline;
+    font-weight: 600;
+    
+}
+
+/* p, h4{
+    font-style: italic;
+} */
+
+h4{
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #B92D25;
+}
+
+.org{
+    color: #BC8409;
+}
+.gold{
+    color: 	#D4AF37;
+}
+
+.silver{
+    color:#C0C0C0;
+}
+
+.bronz{
+    color:#CD7F32;
+}
+
+.orange{
+    color:#fff;
+    background: #BC8409;
+    white-space: nowrap;
+}
+
+.f1,.f2,.f3,.f4{
+    display: flex;
+}
+
+.f2 img{
+    float: right;
+}
+
+.f1 img,.f2 img,.f3 img,.f4 img{
+    width: 90%;
+    margin-bottom: -40px;
+    max-width: 230px;
+}
+
+.f2,.f4{
+    justify-content: flex-end;
+}
+
+.f1 p, .f2 p, .f3 p, .f4 p{
+    margin: 0;
+}
+
+.left-arrow,.right-arrow{
+    flex-basis: 25%;
+    align-self: flex-end;
+}
+
+.brno img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.brno p{
+    display: inline;
+}
+
+
+.right, .left{
+    flex-basis: 60%;
+}
+.right{
+    align-self: flex-end;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.rect{
+    border: 4px dashed #48722D;
+    border-radius: 10px;
+    padding: 5px 2px;
+}
+
+.brno{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:0 8vw;
+    border: 4px dashed #B92D25;
+    border-radius: 10px;
+    padding:10px 5px;
+}
+.valor,.ganar{
+    display: flex;
+}
+
+.red{
+    background: #B92D25;
+    color: #fff;
+    font-weight: 900;
+    
+}
+
+#logo{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    max-width: 700px;
+}
+
+iframe{
+    margin: 0 auto;
+    display: block;
+}
+
+.buttons{
+    display: flex;
+    text-align: center;
+}
+
+.buttons .right{
+    position: relative;
+    margin-bottom: 50px;
+}
+.buttons .left, .buttons .right {
+    flex-basis: 50%;
+    align-self: baseline;
+}
+
+.buttons h3, .buttons h2{
+    color:#3B3B3B;
+}
+
+.buttons .right img{
+    width: 90px;
+    bottom: -55px;
+    right: 1vw;
+    position: absolute;
+}
+
+ .buttons .right h3{
+    margin: 0;
+    margin-bottom: 10px;
+    
+}
+
+.buttons .right h2{
+    margin: 0;
+}
+
+.buttons .right a{
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background: #F8C833;
+    box-shadow: 3px 5px rgba(134, 133, 133,0.7);
+    border-radius: 10px;
+    padding:3px;
+    font-size:2.4em;
+    font-weight: 300;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    font-family: "League",sans-serif;
+    
+}
+
+.buttons h3{
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.buttons .left img{
+    width: 40%;
+}
+.buttons .left h3{
+    margin-bottom: 3px;
+}
+
+.buttons .right h3{
+    font-size: 1.2em;
+}
+
+#logo-course{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    max-width: 550px;
+
+}
+
+.video{
+    margin: 0 auto;
+    width:100.2%;
+    min-width: 500px;
+    /* margin-top: 10px; */
+    /* max-width: 650px; */
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 51.45%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+    
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.normal{
+    font-style: normal;
+}
+
+@media all and (max-width: 580px){
+    .main{
+        font-size: .8em;
+    }
+    .left-arrow,.right-arrow{
+        display: none;
+    }
+
+    .f1 .left,.f2 .right,.f3 .left,.f4 .right{
+        flex-basis: 95%;
+    }
+
+    .f1,.f2,.f3,.f4{
+        justify-content: center;
+    }
+
+    .buttons{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .buttons .right{
+        align-self: center;
+    }
+
+    #logo-course{
+        width: 65%;
+    }
+
+    .brno  img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .video{
+        min-width: 310px;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 1.6em;
+    }
+    h1{
+        font-size: 2.6em;
+    }
+
+    .buttons .right img{
+        bottom: -55px;
+    }
+
+    .buttons .right h2{
+        font-size: 2em;
+    }
+
+    .rightCol,.leftCol{
+        display: none;
+    }
+}

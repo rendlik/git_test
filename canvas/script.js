@@ -69,7 +69,7 @@ let circleArr = []
 
 function init(){
     circleArr = []
-    for(let i = 0; i < 400 ;i++){
+    for(let i = 0; i < 700 ;i++){
         let radius = Math.random()*4+1
         let x = Math.random()*(innerWidth - 2*radius) +radius
         let y = Math.random()*(innerHeight - 2*radius) +radius
@@ -90,13 +90,21 @@ function animate(){
         circleArr[i].update()
     }
     
-   
+    drawLine()
 
 }
 
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
   }
+
+function drawLine(){
+    c.moveTo(canvas.width/3,canvas.height/2)
+    c.lineTo(2*canvas.width/3,canvas.height/2)
+    c.stroke()
+}
+
+
     
 init()
 animate()

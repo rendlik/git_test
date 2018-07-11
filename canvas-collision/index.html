@@ -4,10 +4,372 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://unpkg.com/swipe-listener@latest/dist/swipe-listener.min.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="reset.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <canvas></canvas>
+    
+
+	<header>
+		<!-- <a id="menu-icon" href="#"> </a> -->
+		<div class="header-container">
+			<div class="overlay"></div>
+			<div class="header-item"> USA </div>
+			<div class="country-detail">
+				<div class="description">
+					<div class="duration">
+						<i class="fas fa-hourglass-half fa-3x icon"></i>
+						<p>Standardní doba bakalářského programu je 4 roky magisterského potom roky 2.</p>
+					</div>
+					<div class="tuition">
+						<i class="fas fa-dollar-sign fa-3x icon"></i>
+						<p>Cena školného se průměrně pohybude okolo 30 tisíc dolarů za rok. Školné je možné výrazně snížit pomocí široké nabídky
+							<a href="#" id="scholarships">stipendii</a>
+						</p>
+					</div>
+					<div class="requirements">
+						<i class="fas fa-tasks fa-3x icon"></i>
+						<p>Požadavky se různí, ale velmí důležitá je angličtina, kde většina škol vyžaduje uroveň alespoň B1 a vyšší.</p>
+					</div>
+				</div>
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>
+				</button>
+			</div>
+
+			<div class="header-item"> Anglie </div>
+			<div class="country-detail">
+				<div class="description">
+					<div class="duration">
+						<i class="fas fa-hourglass-half fa-3x icon"></i>
+						<p>Standardní doba bakalářského programu je 3 roky magisterského potom rok 1.</p>
+					</div>
+					<div class="tuition">
+						<i class="fas fa-dollar-sign fa-3x icon"></i>
+						<p>Cena školného se průměrně pohybude okolo 9 tisíc liber za rok. Školné je možné pokrýt bezúročnou
+							<a href="#" id="scholarships">státní půjčkou.</a>
+						</p>
+					</div>
+					<div class="requirements">
+						<i class="fas fa-tasks fa-3x icon"></i>
+						<p>Požadavky se různí, ale velmí důležitá je angličtina, kde většina škol vyžaduje uroveň alespoň B1 a vyšší.</p>
+					</div>
+				</div>
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>
+				</button>
+			</div>
+
+			<div class="header-item"> Kanada </div>
+			<div class="country-detail">
+				<div class="description">
+					<div class="duration">
+						<i class="fas fa-hourglass-half fa-3x icon"></i>
+						<p>Standardní doba bakalářského programu je 4 roky magisterského potom roky 2.</p>
+					</div>
+					<div class="tuition">
+						<i class="fas fa-dollar-sign fa-3x icon"></i>
+						<p>Cena školného se průměrně pohybude okolo 20 tisíc dolarů za rok. Školné je možné výrazně snížit pomocí široké nabídky
+							<a href="#" id="scholarships">stipendii</a>
+						</p>
+					</div>
+					<div class="requirements">
+						<i class="fas fa-tasks fa-3x icon"></i>
+						<p>Požadavky se různí, ale velmí důležitá je angličtina, kde většina škol vyžaduje uroveň alespoň B1 a vyšší.</p>
+					</div>
+				</div>
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>
+				</button>
+			</div>
+
+			<div class="header-item"> Australie </div>
+			<div class="country-detail">
+				<div class="description">
+					<div class="duration">
+						<i class="fas fa-hourglass-half fa-3x icon"></i>
+						<p>Standardní doba bakalářského programu je 4 roky magisterského potom roky 2.</p>
+					</div>
+					<div class="tuition">
+						<i class="fas fa-dollar-sign fa-3x icon"></i>
+						<p>Cena školného se průměrně pohybude okolo 24 tisíc dolarů za rok. Školné je možné výrazně snížit pomocí široké nabídky
+							<a  id="scholarships">stipendii</a>
+						</p>
+					</div>
+					<div class="requirements">
+						<i class="fas fa-tasks fa-3x icon"></i>
+						<p>Požadavky se různí, ale velmí důležitá je angličtina, kde většina škol vyžaduje uroveň alespoň B1 a vyšší.</p>
+					</div>
+				</div>
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>
+				</button>
+			</div>
+
+			<div class="header-item"> Německo</div>
+			<div class="country-detail">
+				<div class="description">
+					<div class="duration">
+						<i class="fas fa-hourglass-half fa-3x icon"></i>
+						<p>Standardní doba bakalářského programu je 4 roky magisterského potom roky 2.</p>
+					</div>
+					<div class="tuition">
+						<i class="fas fa-dollar-sign fa-3x icon"></i>
+						<p>Školné se na drtivé většině škol v Německu neplatí.
+						</p>
+					</div>
+					<div class="requirements">
+						<i class="fas fa-tasks fa-3x icon"></i>
+						<p>Některé školy nabízejí programy v angličtině. Avšak drtivá většina nabídky je v němčině.</p>
+					</div>
+				</div>
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>
+				</button>
+			</div>
+
+			<div class="header-item"> Ostatní </div>
+			<div class="country-detail"> Pokud jste vaší destinaci v nabídce nenalezli, neváhejte nám napsat email či nás kontaktovat na facebooku. Určitě dokážeme
+				pomoci s výběrem vaši vysněné školy, ať už jsou vaše požadavky jakékoliv.
+				<button id="close-button">
+					<span class="btn-line"></span>
+					<span class="btn-line"></span>
+				</button>
+			</div>
+
+		</div>
+
+		<button id="menu-button">
+			<span class="btn-line"></span>
+			<span class="btn-line"></span>
+			<span class="btn-line"></span>
+		</button>
+
+		<div id="menu">
+			<ul id="nav-items">
+				<li id="about">o nás</li>
+				<li id="scholarships">stipendia</li>
+				<li id="contact">kontakt</li>
+			</ul>
+		</div>
+
+		<div class="about">
+			<button id="close-button">
+				<span class="btn-line"></span>
+				<span class="btn-line"></span>
+			</button>
+
+		</div>
+
+		<div class="contact">
+			<button id="close-button">
+				<span class="btn-line"></span>
+				<span class="btn-line"></span>
+			</button>
+			<div class="adr-icons">
+				<div class="adr">
+					<ul>
+						<li><h3>EduGo</h3></li>
+						<li>Kotlářská 39, 60200 Brno</li>
+						<li>educationgo.info@gmail.com</li>
+					</ul>
+				</div>
+
+				<div class="icons">
+					<a href="#">
+						<i class="fab fa-facebook fa-2x"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram fa-2x"></i>
+						</i>
+						</i>
+					</a>
+					<a href="mailto:educationgo.info@gmail.com">
+						<i class="fas fa-at fa-2x"></i>
+						</i>
+					</a>
+				</div>
+			</div>
+			<div class="contact-detail">
+				<h3>Napiš nám</h3>
+				<div class="confirmation">Vaše zpráva byla odeslána.</div>
+				<div class="error">Prosím vyplňte všechna pole.</div>
+				<form>
+					<p>
+						<label>Jméno</label>
+						<input type="text" name="name" required="">
+					</p>
+					<p>
+						<label>Email</label>
+						<input type="email" name="email" required="">
+					</p>
+					<p class="full">
+						<label>Zpráva</label>
+						<textarea name="message" rows="6"></textarea>
+					</p>
+					<p class="full">
+						<button>Odeslat</button>
+					</p>
+				</form>
+			</div>
+
+			<div class="icons-bottom">
+				<a href="#">
+					<i class="fab fa-facebook fa-2x"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-instagram fa-2x"></i>
+					</i>
+					</i>
+				</a>
+				<a href="mailto:rmnstix@gmail.com" target='_blank'>
+					<i class="fas fa-at fa-2x"></i>
+					</i>
+				</a>
+			</div>
+
+			
+		</div>
+
+		<div class="scholarships">
+			<button id="close-button">
+				<span class="btn-line"></span>
+				<span class="btn-line"></span>
+			</button>
+			<nav>
+				<ul>
+					<li class="bakala nav open">Bakala</li>
+					<li class="kellner nav">Kellner</li>
+					<li class="fulbright nav">Fulbright</li>
+					<li class="krsek nav">Krsek</li>
+				</ul>
+			</nav>
+			<div id="bakala" class="bakala description scholar open">
+				<h2>Bakala Foundation</h2>
+				<div class="target">
+					<i class="fas fa-bullseye fa-3x icon"></i>
+					<p>Určeno studentům bakalářských a magisterských programů.
+					</p>
+				</div>
+				<div class="deadllines">
+					<i class="far fa-calendar-alt fa-3x icon"></i>
+					<p>30. duben 2018
+					</p>
+				</div>
+				<div class="requirements">
+					<i class="fas fa-tasks fa-3x icon"></i>
+					<ul>
+						<li>Statní občanství ČR.</li>
+						<li>Věk maximálně 33 let.</li>
+						<li>Esej v anglickém jazyce na zadané téma v rozsahu maximálně 600 slov.</li>
+						<li>Následuje ustní pohovor</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="kellner" class="kellner description scholar">
+				<h2>The Kellner Family Foundation</h2>
+				<div class="target">
+					<i class="fas fa-bullseye fa-3x icon"></i>
+					<p>Určeno studentům bakalářských programů.</p>
+				</div>
+
+				<div class="deadllines">
+					<i class="far fa-calendar-alt fa-3x icon"></i>
+					<p> 31. květen 2018
+					</p>
+				</div>
+				<div class="requirements">
+					<i class="fas fa-tasks fa-3x icon"></i>
+					<ul>
+						<li>Kopie dokladů o dosavadním studiu a jazykové zkoušce.</li>
+						<li>Doklad o finanční situaci rodiny.</li>
+						<li>Doporučení (nejlépe od pedagoga, trenéra, vedoucího uměleckého tělesa či kroužku).</li>
+						<li>Odůvodnění váběru školy a její umístění v žebříčku škol.</li>
+						<li>Esej v anglickém i českém jazyce na zadané téma v rozsahu maximálně 1000 slov.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="fulbright" class="fulbright description scholar">
+				<h2>Fulbrightova komise</h2>
+				<div class="target">
+					<i class="fas fa-bullseye fa-3x icon"></i>
+					<p>Určeno studentům pouze magisterských programů.
+					</p>
+				</div>
+				<div class="deadllines">
+					<i class="far fa-calendar-alt fa-3x icon"></i>
+					<p>1. září 2018
+					</p>
+				</div>
+				<div class="requirements">
+					<i class="fas fa-tasks fa-3x icon"></i>
+					<ul>
+						<li>Statní občanství ČR.</li>
+						<li>Velmi dobrá úroveň angličtiny (TOEFL 80+). </li>
+						<li>Životopis, 3 doporučující dopisy a kopii diplomu.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="krsek" class="krsek description scholar">
+				<h2>Krsek Foundation</h2>
+				<div class="target">
+					<i class="fas fa-bullseye fa-3x icon"></i>
+					<p>Určeno studentům magisterských programů.</p>
+				</div>
+				<div class="deadllines">
+					<i class="far fa-calendar-alt fa-3x icon"></i>
+					<p>Žádat lze kdykoliv.
+					</p>
+				</div>
+				<div class="requirements">
+					<i class="fas fa-tasks fa-3x icon"></i>
+					<ul>
+						<li>Potvrzení o tom že student žádal o stipendium na zahraniční VŠ, avšak nedostal jej (či dostal jen částečně).</li>
+						<li>Věk maximálně 25 let.</li>
+						<li>Esej v českém jazyce na téma proč chce student studovat danou VŠ.</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+
+	<section id="jumbotron">
+	</section>
+	<!-- <div>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis dolor blandit, sagittis eros vel, pretium diam. Pellentesque porta mauris ipsum. Sed sed lectus quam. Nullam sodales nunc eget quam luctus accumsan. Etiam orci risus, porta eget tempus id, sagittis nec odio. Morbi placerat tincidunt fringilla. Nulla facilisi. Praesent posuere nisl ultrices euismod aliquet. In id euismod neque, et ullamcorper elit. Nulla facilisi. Vestibulum risus sapien, gravida vitae cursus vel, auctor vel ante. Vestibulum sed rutrum orci. Proin diam lorem, vestibulum nec ipsum ut, vestibulum condimentum lorem. Proin posuere ultricies dui, a lacinia diam egestas at. Aliquam erat volutpat.
+
+		Aenean nec finibus neque, at tempus lacus. Donec interdum vel quam vitae mattis. Mauris nec libero sit amet nibh porta congue in at urna. Curabitur condimentum tellus quis elit placerat aliquam. In quis luctus enim. Aliquam vitae eleifend augue. Nam quis nisi aliquet, auctor turpis vitae, iaculis odio. Donec ultrices elit at risus maximus commodo. Proin sed ipsum condimentum, ornare tellus eget, maximus enim. Donec tincidunt aliquam lectus vitae tristique. Praesent vehicula tempor neque at hendrerit. Phasellus elementum est sit amet tortor iaculis, ut maximus quam vulputate.
+
+		Proin efficitur ligula mollis fringilla lacinia. Proin rhoncus lorem pulvinar, dapibus sem a, blandit nunc. Maecenas tempor facilisis nibh, non suscipit massa ullamcorper sed. Nam ut urna libero. Duis scelerisque eu turpis in varius. Ut vehicula volutpat interdum. Donec nunc massa, convallis ac lorem eget, pretium venenatis libero. Pellentesque in elit nulla. Vivamus at scelerisque lectus. Donec blandit mi leo, et vulputate urna semper congue.
+
+		In eget vehicula diam, sed ornare purus. Duis tempus congue odio, in mattis quam ullamcorper et. Donec mattis tortor vitae nunc condimentum gravida. Morbi a malesuada sapien. Donec congue mi eu interdum maximus. Aenean odio nulla, maximus nec porta id, egestas vitae urna. Vivamus eget est dolor. Sed ex turpis, vehicula vitae nulla in, ultrices porta augue. Mauris sit amet scelerisque velit, nec venenatis diam. Proin viverra eu purus nec consectetur. Nunc dapibus finibus enim, quis cursus sapien rutrum at. Fusce fermentum justo ac mi sodales fringilla. Ut ut metus accumsan, hendrerit nisl in, malesuada nibh.
+
+		Pellentesque orci nisl, auctor vitae bibendum interdum, elementum id metus. Nam sed laoreet felis. Vivamus elementum lectus feugiat nulla ullamcorper, eu tempus lorem porttitor. Sed eu velit interdum ligula mattis mollis. Donec ut velit non nulla vulputate lobortis. Sed urna nunc, faucibus posuere est ut, placerat finibus ligula. Phasellus rhoncus ipsum rhoncus, ultricies erat sed, varius metus. Quisque sit amet enim eget erat condimentum hendrerit nec sed lorem. Fusce pellentesque, quam at accumsan placerat, velit mauris pharetra ligula, vel commodo leo ipsum non purus. Vestibulum ultricies quam nisl, eu fermentum elit rhoncus ut. Vestibulum sed venenatis ante. Proin rhoncus venenatis dui eu dignissim. Donec aliquam, sem quis lobortis aliquet, metus justo tempor leo, in mattis velit neque eu ligula.
+	</div> -->
+
+
+
+	<!-- javascript -->
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
     <script src="canvas.js"></script>
 </body>
 </html>

@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.features-area {
+  text-align: center;
+  background: url(http://insspira.com/wp-content/themes/Insspira/img/career-page-bg.jpg)
+    no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background-position: top;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.airplane-box {
+  padding-bottom: 8vw;
+}
+
+.airplane-board {
+  min-height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  background: url(http://insspira.com/wp-content/themes/Insspira/img/airplane-board.png)
+    no-repeat 0 0 rgba(0, 0, 0, 0);
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+}
+
+.airplane-board-content {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 22px;
+  width: 80%;
+}
+
+.airplane-board-content p {
+  margin: 5px;
+}
+
+.airplane-board-content strong {
+  font-size: 32px;
+}
+
+.airplane-top {
+  color: rgb(47, 47, 47);
+  padding: 50px 30px;
+}
+
+.airplane-top p.medium {
+  text-transform: uppercase;
+}
+
+.airplane-top h1 {
+  text-transform: uppercase;
+}
+
+#our-story {
+  background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box1.jpg)
+    no-repeat;
+  background-position: right;
+  margin-top: -30px;
+}
+
+#products {
+  background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box2.jpg)
+    no-repeat left;
+}
+
+#testimonials {
+  background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box3.jpg)
+    no-repeat right;
+}
+
+#comfort {
+  background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box4.jpg)
+    no-repeat left;
+}
+
+#careers {
+  background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box5.jpg)
+    no-repeat right;
+}
+
+#people {
+  background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box6.jpg)
+    no-repeat left;
+}
+
+.dee section {
+  height: 360px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 18px #000000;
+}
+
+.dee section .left,
+.dee section .right {
+  width: 45%;
+  padding: 10px 4vw;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+}
+
+.dee section .right {
+  float: right;
+}
+
+#contact-us {
+  background: url(http://insspira.com/wp-content/themes/Insspira/img/career-contact-bg.jpg)
+    no-repeat center bottom;
+  background-attachment: fixed;
+  min-height: 500px;
+  position: relative;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#contact-us .solid-bg {
+  background: rgba(0, 0, 0, 0.6);
+  width: 40%;
+  /* float: right; */
+  height: 100%;
+  text-align: center;
+  padding: 20px 3vw;
+  margin: 0 3vw;
+  color: #fff;
+  flex:1;
+}
+
+@media (max-width: 768px) {
+  .dee section .left,
+  .dee section .right {
+    width: 100%;
+  }
+
+  #contact-us{
+      align-items: center;
+  }
+
+  #contact-us .solid-bg{
+      width: 80%
+       
+  }
+}

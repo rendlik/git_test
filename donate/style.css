@@ -1,0 +1,44 @@
+body{
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+
+.pha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: url('pha.jpeg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.pha button{
+    padding: 6px 18px;
+    margin: 10px 0;
+    background-color: #77A386;
+    color: #FEFBE3;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 400ms ease-in-out;
+}
+
+.pha input{
+    margin: 10px;
+    padding:5px;
+    background-color: #FEFBE3;
+    color: #666371;
+}
+
+.pha button:hover{
+    background-color: #5F8F88;
+}
+
+.currency.active{
+    background-color: #5F8F88;
+}
