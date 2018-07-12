@@ -239,15 +239,19 @@ iframe{
 .buttons{
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10vw;
 }
 
 .buttons .right{
     position: relative;
-    margin-bottom: 50px;
+    margin-top: 20px;
 }
 .buttons .left, .buttons .right {
-    flex-basis: 50%;
-    align-self: baseline;
+    flex-basis: 60%;
+    align-self: center;
 }
 
 .buttons h3, .buttons h2{
@@ -270,7 +274,7 @@ iframe{
 .buttons .right h2{
     margin: 0;
 }
-
+/* 
 .buttons .right a{
     margin-top: 15px;
     text-transform: uppercase;
@@ -287,7 +291,33 @@ iframe{
     margin: 0 auto;
     font-family: "League",sans-serif;
     
+} */
+
+.buttons .left a,.buttons .right a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 28px;
+    color: #fff;
+    background: #C0C0C0;
+    padding: 10px;
+    box-shadow: 3px 3px 3px #C0C0C0;
+    /* width: 60%; */
+    /* margin: 10px 9vw; */
 }
+
+.buttons .left a i{
+    color: #34af23;
+    margin-left: 8px;
+}
+
+.buttons .right a i{
+    color:	#FFDF00;
+    margin-left: 8px;
+}
+
+ 
 
 .buttons h3{
     font-size: 1.6em;
@@ -317,6 +347,9 @@ iframe{
     margin: 0 auto;
     width:100.2%;
     min-width: 500px;
+    top:0;
+    /* left: 50%;
+    transform: translateX(-50%); */
     /* margin-top: 10px; */
     /* max-width: 650px; */
 }

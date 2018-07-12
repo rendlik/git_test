@@ -4,7 +4,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.features-area {
+.career-page .eatures-area {
   text-align: center;
   background: url(http://insspira.com/wp-content/themes/Insspira/img/career-page-bg.jpg)
     no-repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -13,11 +13,11 @@ body {
   min-height: 100vh;
 }
 
-.airplane-box {
+.career-page .irplane-box {
   padding-bottom: 8vw;
 }
 
-.airplane-board {
+.career-page .irplane-board {
   min-height: 400px;
   width: 400px;
   margin: 0 auto;
@@ -28,7 +28,7 @@ body {
   position: relative;
 }
 
-.airplane-board-content {
+.career-page .irplane-board-content {
   position: absolute;
   bottom: 90px;
   left: 50%;
@@ -38,67 +38,67 @@ body {
   width: 80%;
 }
 
-.airplane-board-content p {
+.career-page .irplane-board-content p {
   margin: 5px;
 }
 
-.airplane-board-content strong {
+.career-page .irplane-board-content strong {
   font-size: 32px;
 }
 
-.airplane-top {
+.career-page .irplane-top {
   color: rgb(47, 47, 47);
   padding: 50px 30px;
 }
 
-.airplane-top p.medium {
+.career-page .irplane-top p.edium {
   text-transform: uppercase;
 }
 
-.airplane-top h1 {
+.career-page .irplane-top h1 {
   text-transform: uppercase;
 }
 
-#our-story {
+.career-page #ur-story {
   background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box1.jpg)
     no-repeat;
   background-position: right;
   margin-top: -30px;
 }
 
-#products {
+.career-page #roducts {
   background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box2.jpg)
     no-repeat left;
 }
 
-#testimonials {
+.career-page #estimonials {
   background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box3.jpg)
     no-repeat right;
 }
 
-#comfort {
+.career-page #omfort {
   background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box4.jpg)
     no-repeat left;
 }
 
-#careers {
+.career-page #areers {
   background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box5.jpg)
     no-repeat right;
 }
 
-#people {
+.career-page #eople {
   background: url(http://insspira.com/wp-content/themes/Insspira/img/career-box6.jpg)
     no-repeat left;
 }
 
-.dee section {
+.career-page .ee section {
   height: 360px;
   margin-bottom: 30px;
   box-shadow: 0 0 18px #000000;
 }
 
-.dee section .left,
-.dee section .right {
+.career-page .ee section .left,
+.career-page .ee section .right {
   width: 45%;
   padding: 10px 4vw;
   height: 100%;
@@ -106,11 +106,11 @@ body {
   box-sizing: border-box;
 }
 
-.dee section .right {
+.career-page .ee section .right {
   float: right;
 }
 
-#contact-us {
+.career-page #ontact-us {
   background: url(http://insspira.com/wp-content/themes/Insspira/img/career-contact-bg.jpg)
     no-repeat center bottom;
   background-attachment: fixed;
@@ -123,7 +123,7 @@ body {
   align-items: flex-end;
 }
 
-#contact-us .solid-bg {
+.career-page #ontact-us .olid-bg {
   background: rgba(0, 0, 0, 0.6);
   width: 40%;
   /* float: right; */
@@ -136,16 +136,16 @@ body {
 }
 
 @media (max-width: 768px) {
-  .dee section .left,
-  .dee section .right {
+    .career-page .ee section .left,
+    .career-page .ee section .right {
     width: 100%;
   }
 
-  #contact-us{
+  .career-page #ontact-us{
       align-items: center;
   }
 
-  #contact-us .solid-bg{
+  .career-page #ontact-us .olid-bg{
       width: 80%
        
   }

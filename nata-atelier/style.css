@@ -352,3 +352,11 @@ footer p,
 .my-gallery figcaption {
   display: none;
 }
+
+.pswp__bg{
+  background: rgba(0,0,0,.85);
+}
+
+.pswp__caption__center {
+  text-align: center;
+}  
