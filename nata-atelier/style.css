@@ -362,7 +362,7 @@ footer p,
 }  
 
 .panels {
-  min-height:80vh;
+  min-height:100vh;
   overflow: hidden;
   display: flex;
 }
