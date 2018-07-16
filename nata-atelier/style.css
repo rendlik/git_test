@@ -362,7 +362,7 @@ footer p,
 }  
 
 .panels {
-  min-height:100vh;
+  min-height:60vh;
   overflow: hidden;
   display: flex;
 }
@@ -439,4 +439,16 @@ footer p,
 .panel.open {
   font-size:40px;
   flex:3;
+}
+
+@media all and (max-width:767px){
+  .panel5{
+    display: none;
+  }
+}
+
+@media all and (max-width:464px){
+  .panel4,.panel5{
+    display: none;
+  }
 }
