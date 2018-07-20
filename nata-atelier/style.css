@@ -516,7 +516,7 @@ footer p,
 .carousel{
   box-sizing: border-box;
   position: relative;
-  height: 60vh;
+  /* height: 60vh; */
 }
 
 .slide{

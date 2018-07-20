@@ -1,0 +1,42 @@
+.carousel {
+    padding: 30px 0;
+    perspective: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* .carousel:nth-child(1){
+    margin-right: 35%;
+  } */
+  
+  /* .carousel:nth-child(2){
+    margin-left: 16vw;
+  } */
+  
+  .carousel > * {
+    flex: 0 0 auto;
+  }
+  
+  .carousel figure {
+    width: 80%;
+    transform-style: preserve-3d;
+    transition: transform 1000ms;
+    /* transform-origin: 50% 50% var(--apothem);  */
+  
+    /* transform: rotateY(some amount here rad); */
+  }
+  
+  .carousel figure img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0px;
+  }
+  
+  .carousel figure img:not(:first-of-type) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* transform-origin: 50% 50% var(--apothem); */
+  }
