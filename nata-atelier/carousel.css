@@ -1,6 +1,6 @@
 .carousel {
     padding: 30px 0;
-    perspective: 100%;
+    perspective: 500px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
