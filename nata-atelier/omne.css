@@ -1,0 +1,17 @@
+.vary{
+    margin: 20px 0;
+}
+
+.popis{
+    display: flex;
+}
+.popis p{
+    flex-basis: 60%;
+}
+
+.popis div{
+    flex-basis: 40%;
+    background: url(c1.jpeg);
+    background-size: cover;
+    background-position: bottom center;
+}
