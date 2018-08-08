@@ -6,6 +6,30 @@ const ratings ={
 
 const starsTotal = 5;
 
+const productSelect = document.getElementById('product-select');
+const ratingControl = document.getElementById('rating-control');
+
+let product;
+
+productSelect.addEventListener('change',(e) => {
+    product = e.target.value;
+    ratingControl.disabled = false;
+    ratingControl.value = ratings[product];
+})
+
+ratingControl.addEventListener('change ',(e) => {
+    const rating = e.target.value;
+
+    if(rating>5){
+        alert('Enter number between 0 - 5');
+        return;
+    }
+
+    ratings[product] = rating;
+    getRatings();
+})
+
+
 document.addEventListener('DOMContentLoaded',getRatings)
 
 function getRatings(){

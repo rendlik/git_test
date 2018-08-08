@@ -31,14 +31,14 @@ thumbnails.forEach(thumbnail => thumbnail.addEventListener('click',function(e){
 
 hamburger.addEventListener('click',()=>{
 	// debugger;
-    if(window.pageYOffset > 0 && !open){
-        // title.style.transition = 'all 900ms cubic-bezier(0, 0.65, 0.58, 1)'
-        title.style.top = window.pageYOffset + 'px'
-        // open = 1
-    }else{
-        title.style.top = 0;
-        // open = 0;
-	}
+    // if(window.pageYOffset > 0 && !open){
+    //     // title.style.transition = 'all 900ms cubic-bezier(0, 0.65, 0.58, 1)'
+    //     title.style.top = window.pageYOffset + 'px'
+    //     // open = 1
+    // }else{
+    //     title.style.top = 0;
+    //     // open = 0;
+	// }
 	hamburgerLines.forEach(line => line.classList.remove('animate'))
 	open = open === 0 ? 1 : 0;
     hamburger.classList.toggle('active')
