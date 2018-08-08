@@ -46,14 +46,14 @@ nav .title {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 15vh;
   background-color: #f6f4ef;
   transition: all 800ms cubic-bezier(0.85, -0.01, 0, 1.01);
   z-index: 100;
 }
 
 nav .underlay {
-  height: 10vh;
+  height: 15vh;
   width: 100%;
 }
 
@@ -66,7 +66,7 @@ nav h3 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
-  padding-top: 15px;
+  /* padding-top: 15px; */
 }
 
 #hamburger {
@@ -230,16 +230,17 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   padding: 24px;
+  height: 20vh;
 }
 
-footer p,
+/* footer p,
 .socials {
   margin: 7px;
 }
 
 .socials a {
   margin: 3px;
-}
+} */
 
 .weddings {
   margin: 30px 10px;
@@ -578,4 +579,16 @@ footer p,
   .panel4,.panel5{
     display: none;
   }
+}
+
+
+.kontakt {
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontakt li{
+  margin: 1vh;
 }
