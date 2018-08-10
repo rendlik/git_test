@@ -15,6 +15,6 @@ const getWeather = (lat,lgn,callback) => {
     })
 }
 
-const convertToCelsius = (far) => (5/9*(far-32))
+const convertToCelsius = (far) => Math.round((5/9*(far-32)) * 10) / 10
 
 module.exports.getWeather = getWeather;
