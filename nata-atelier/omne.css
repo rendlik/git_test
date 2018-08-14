@@ -2,16 +2,18 @@
     margin: 20px 0;
 }
 
+
+
 .popis{
-    display: flex;
+    /* display: flex; */
 }
 .popis p{
-    flex-basis: 60%;
+    /* flex-basis: 60%; */
 }
 
-.popis div{
-    flex-basis: 40%;
-    background: url(c1.jpeg);
-    background-size: cover;
-    background-position: bottom center;
+.popis img{
+    /* flex-basis: 40%; */
+    width: 30%;
+    max-width: 250px;
+    float: right;
 }
