@@ -1,3 +1,8 @@
+$("header").load('header.html')
+$("footer").load('footer.html')
+
+
+$(function(){
 const hamburger = document.querySelector('#hamburger')
 const hamburgerLines = document.querySelectorAll('#hamburger span')
 const menu = document.querySelector('#menu')
@@ -5,6 +10,8 @@ const title = document.querySelector('.title')
 const menuItems = document.querySelectorAll('#menu a')
 
 const thumbnails = document.querySelectorAll('.thumb')
+
+
 
 let open = 0
 
@@ -282,3 +289,5 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 	
 	// execute above function
 	initPhotoSwipeFromDOM('.my-gallery');
+
+});

@@ -339,33 +339,7 @@ footer {
   padding: 6vh 8vw;
 }
 
-.my-gallery {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.my-gallery img {
-  width: 100%;
-  height: auto;
-}
-.my-gallery figure {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-  width: 150px;
-}
-.my-gallery figcaption {
-  display: none;
-}
 
-.pswp__bg{
-  background: rgba(0,0,0,.85);
-}
-
-.pswp__caption__center {
-  text-align: center;
-}  
 
 .panels {
   min-height:60vh;
