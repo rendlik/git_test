@@ -1,0 +1,55 @@
+/* A28A8B
+1E1A15
+57605F
+80979B
+F1EAED */
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+:root{
+    --greyL: #F1EAED;
+    --green: #80979B;
+    --greyD: #57605F;
+    --brown: #1E1A15;
+    --pink: #ff9b9b;
+
+}
+
+body{
+    padding: 4vh 10vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--green);
+}
+
+body *{
+    color: var(--brown);    
+    font-family: 'Source Code Pro', monospace;  
+}
+
+.instructions{
+    border: 4px solid var(--greyD);
+    border-radius: 10px;
+    padding: 2vh 4vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    background: var(--greyL);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+#seconds,#time-left,#score{
+    color: var(--pink);
+    font-size: 1.4em;
+}
