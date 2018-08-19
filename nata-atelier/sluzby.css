@@ -3,13 +3,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .polozka{
-    flex-basis: 30%;
+    flex-basis: 21%;
     box-sizing: border-box;
-    margin: 1vw;
-    height: 30vw;
+    margin: .5%;
+    height: 21vw;
     background: url(w1.jpeg);
     background-position: center;
     background-size: cover;
