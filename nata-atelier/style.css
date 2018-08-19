@@ -543,6 +543,22 @@ footer {
   to {opacity: 1}
 }
 
+.ome{
+  display: flex;
+  margin: 2vw;
+}
+
+.ome p{
+  flex-basis: 65%
+}
+
+.ome .img{
+  background: url('girl.jpeg');
+  background-size: cover;
+  flex-basis: 35%;
+  min-height: 35vw;
+}
+
 @media all and (max-width:769px){
   .panel5{
     display: none;
