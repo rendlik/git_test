@@ -1,0 +1,20 @@
+.vary {
+  margin: 20px 0;
+}
+
+.popis {
+  /* display: flex; */
+}
+.popis p {
+  /* flex-basis: 60%; */
+}
+
+.popis img {
+  /* flex-basis: 40%; */
+  width: 30%;
+  max-width: 250px;
+  float: right;
+}
+
+@media (max-width: 464px) {
+}
