@@ -10,6 +10,10 @@ html {
   font-family: sans-serif;
 }
 
+* {
+  touch-action: manipulation !important;
+}
+
 .keys {
   display: flex;
   flex: 1;
