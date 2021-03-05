@@ -1,13 +1,18 @@
-html {
-  font-size: 10px;
-  background: url('gorilla.jpg') bottom center;
-  background-size: cover;
-}
 body,
 html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+html {
+  font-size: 10px;
+  background: url('gorilla.jpg') bottom center;
+  background-size: cover;
+}
+
+body {
+  padding: 30px 5px;
 }
 
 * {
@@ -17,7 +22,7 @@ html {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   align-items: center;
   justify-content: center;
 }
