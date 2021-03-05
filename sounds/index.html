@@ -59,6 +59,7 @@
 
     <script>
       window.addEventListener('keydown', function (e) {
+        console.log(e);
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
         if (!audio) return;
 
@@ -74,10 +75,11 @@
         }, 120);
       });
 
-      // window.addEventListener("mousedown",console.log('asasdjlka'));
       var keyArray = document.getElementsByClassName('key');
+
       for (var i = 0; i < keyArray.length; i++) {
         keyArray[i].addEventListener('touchstart', function (e) {
+          console.log(e);
           const audio = document.querySelector(
             `audio[data-key="${e.path[1].attributes[0].nodeValue}"]`
           );
@@ -96,7 +98,7 @@
                 `div[data-key="${e.path[1].attributes[0].nodeValue}"]`
               )
               .classList.remove('playing');
-          }, 120);
+          }, 200);
         });
       }
     </script>
