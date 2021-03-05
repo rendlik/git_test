@@ -35,6 +35,12 @@ html {
   background: rgba(0, 0, 0, 0.4);
   text-shadow: 0 0 0.5rem black;
   min-width: 100px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 .playing {
@@ -46,6 +52,12 @@ html {
 kbd {
   display: block;
   font-size: 4rem;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 .sound {
@@ -53,6 +65,12 @@ kbd {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: #ffc600;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
 
 @media (max-width: 768px) {
